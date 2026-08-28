@@ -1,6 +1,9 @@
 # Week 1
 ## Set up your system and demonstrate basic UNIX command line actions
 
+### Code Editor
+```Visual Studio Code```
+
 ### Version of Samtools in Bioinfo environment Command 
 ```
 bioinfo
