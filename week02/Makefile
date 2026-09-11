@@ -10,14 +10,16 @@ all: download
 
 download: $(FASTA) $(GFF)
 
-
 $(FASTA):
 	mkdir -p $(SEQUENCES_DIR)
-	curl -fL "$(NCBI_URL)?db=nuccore&id=$(ACCESSION)&rettype=fasta&retmode=text" -o $@
+	datasets download virus genome accession $(ACCESSION) --include genome --filename $(SEQUENCES_DIR)/$(ACCESSION)_genome.zip
+	unzip -o $(SEQUENCES_DIR)/$(ACCESSION)_genome.zip -d $(SEQUENCES_DIR)/$(ACCESSION)_tmp
+	cp $(SEQUENCES_DIR)/$(ACCESSION)_tmp/ncbi_dataset/data/genomic.fna $(FASTA)
+	rm -rf $(SEQUENCES_DIR)/$(ACCESSION)_genome.zip $(SEQUENCES_DIR)/$(ACCESSION)_tmp
 
 $(GFF):
 	mkdir -p $(SEQUENCES_DIR)
 	curl -fL "$(NCBI_URL)?db=nuccore&id=$(ACCESSION)&rettype=gff3&retmode=text" -o $@
 
 clean:
-	rm -f $(FASTA) $(GFF)
+	rm -rf $(SEQUENCES_DIR)

@@ -1,0 +1,22 @@
+{
+"apiVersion": "V2",
+"assemblies": [
+{
+  "files": [
+    {
+      "filePath": "data_report.jsonl",
+      "fileType": "DATA_REPORT",
+      "uncompressedLengthBytes": "1102"
+    },
+    {
+      "filePath": "annotation_report.jsonl",
+      "fileType": "ANNOTATION_REPORT",
+      "uncompressedLengthBytes": "555"
+    },
+    {
+      "filePath": "genomic.fna",
+      "fileType": "GENOMIC_NUCLEOTIDE_FASTA",
+      "uncompressedLengthBytes": "726"
+    }
+  ]
+}]}
