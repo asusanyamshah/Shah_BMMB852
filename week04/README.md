@@ -1,7 +1,3 @@
-# BMMB 852 Assignments
-
-Each week directory contains the work required for that week
-
 # Week 04: Obtain FASTQ data from SRA
 
 ## How "popular" is this genome? How many datasets are available?
