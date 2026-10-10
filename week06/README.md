@@ -16,18 +16,27 @@ This file has a lot more disagreements in the reads. There are reads where the b
 ## File 3
 This sample has quite a few diagreements in the reads too. However, these reads present fewer structural variants than sample 2. This sample also had fewer SNPs than sample 2. There is a section where the coverage drops down drastically which is shown in the image below. This sample also has a variant early on in the reads which is shown in the second image. 
 
+It also  has high read coverage across the region and shows numerous colored mismatches relative to the reference genome. The variation appears distributed throughout the region, with several likely SNPs and possible small insertions or deletions.
+
 ![IGV file 3](images/igv_3_1.png)
 ![IGV file 3_2](images/igv_3_2.png)
+![IGV file 3_3](images/igv_3_3.png)
 
 ## File 4
 Sample 4 seems very complete. It has very few disagreements with the reference genomes and very few to none structural variants. The coverage seems pretty good, although it does dip in a few sections, however that is expected. There were several positions in the chromosome where some of the reads disagreed with the reference genome, however they were corrected by majorite of other reads at that position being accurate. 
 
+Sample 4 has lower and more uneven read coverage than Sample 3. Most reads match the reference, but a few localized mismatches are visible, suggesting limited or less confidently supported SNP variation in this region.
+
 ![IGV file 4](images/igv_4_1.png)
+![IGV file 4_2](images/igv_4_2.png)
 
 ## File 5
 Sample 5 is quite similar to sample 4 in the sense that there are very few to none structural variants. The coverage seems pretty uniform. However, like sample 4, sample 5 has a few single base pairs disagreements with the reference genome which are ultimately corrected by the other majority correct reads at that position. 
 
+Sample 5 has broad, fairly consistent coverage across the region. The reads mostly agree with the reference genome, with scattered mismatches and a few localized clusters that may represent sample-specific SNPs or small indels.
+
 ![IGV file 5](images/igv_5_1.png)
+![IGV file 5_5](images/igv_5_2.png)
 
 
 
