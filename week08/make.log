@@ -1,0 +1,331 @@
+mkdir -p bam
+samtools addreplacerg -m overwrite_all \
+	-r "@RG\tID:SRR2584863\tSM:SRR2584863\tPL:ILLUMINA" \
+	-o bam/SRR2584863.sorted.bam ../week05/bam/SRR2584863.sorted.bam
+samtools index bam/SRR2584863.sorted.bam
+mkdir -p raw
+prefetch SRR2584405
+2026-10-18T22:59:47 prefetch.3.4.1: 1) Resolving 'SRR2584405'...
+2026-10-18T22:59:49 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+2026-10-18T22:59:49 prefetch.3.4.1: 1) Downloading 'SRR2584405'...
+2026-10-18T22:59:49 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-18T22:59:49 prefetch.3.4.1:  Downloading via HTTPS...
+2026-10-18T23:01:16 prefetch.3.4.1:  HTTPS download succeed
+2026-10-18T23:01:16 prefetch.3.4.1:  'SRR2584405' is valid: 316398077 bytes were streamed from 316389179
+2026-10-18T23:01:16 prefetch.3.4.1: 1) 'SRR2584405' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw SRR2584405
+spots read      : 1,658,378
+reads read      : 3,316,756
+reads written   : 3,316,756
+test -s "raw/SRR2584405_1.fastq"
+test -s "raw/SRR2584405_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584405_1.fastq" > "raw/SRR2584405_1.tmp.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584405_2.fastq" > "raw/SRR2584405_2.tmp.fastq"
+mv "raw/SRR2584405_1.tmp.fastq" "raw/SRR2584405_1.fastq"
+mv "raw/SRR2584405_2.tmp.fastq" "raw/SRR2584405_2.fastq"
+touch raw/SRR2584405.done
+mkdir -p trimmed
+fastp --thread 2 \
+	-i "raw/SRR2584405_1.fastq" -I "raw/SRR2584405_2.fastq" \
+	-o "trimmed/SRR2584405_1.fastq" -O "trimmed/SRR2584405_2.fastq" \
+	--html "trimmed/SRR2584405.html" --json "trimmed/SRR2584405.json"
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 20842477(89.6451%)
+Q30 bases: 18840050(81.0325%)
+Q40 bases: 3512820(15.1089%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21148620(90.9618%)
+Q30 bases: 19301010(83.0151%)
+Q40 bases: 3829401(16.4705%)
+
+Read1 after filtering:
+total reads: 135920
+total bases: 19678148
+Q20 bases: 19003703(96.5726%)
+Q30 bases: 17402926(88.4378%)
+Q40 bases: 3366521(17.1079%)
+
+Read2 after filtering:
+total reads: 135920
+total bases: 19678148
+Q20 bases: 18634439(94.6961%)
+Q30 bases: 17221812(87.5174%)
+Q40 bases: 3602799(18.3086%)
+
+Filtering result:
+reads passed filter: 271840
+reads failed due to low quality: 38014
+reads failed due to too many N: 146
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 39826
+bases trimmed due to adapters: 1458574
+
+Duplication rate: 0.0890323%
+
+Insert size peak (evaluated by paired-end reads): 172
+
+JSON report: trimmed/SRR2584405.json
+HTML report: trimmed/SRR2584405.html
+
+fastp --thread 2 -i raw/SRR2584405_1.fastq -I raw/SRR2584405_2.fastq -o trimmed/SRR2584405_1.fastq -O trimmed/SRR2584405_2.fastq --html trimmed/SRR2584405.html --json trimmed/SRR2584405.json 
+fastp v1.3.6, time used: 1 seconds
+touch trimmed/SRR2584405.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:SRR2584405\tSM:SRR2584405\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/SRR2584405_1.fastq" "trimmed/SRR2584405_2.fastq" \
+	| samtools sort -@ 2 -o bam/SRR2584405.sorted.bam
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 138276 sequences (20000156 bp)...
+[M::process] read 133564 sequences (19356140 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (557, 60356, 21, 547)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (281, 634, 1997)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5429)
+[M::mem_pestat] mean and std.dev: (1053.35, 1194.52)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7145)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (177, 255, 368)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 750)
+[M::mem_pestat] mean and std.dev: (281.32, 141.36)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 941)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (142, 248, 2200)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6316)
+[M::mem_pestat] mean and std.dev: (1043.60, 1610.80)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8374)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (253, 652, 2015)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5539)
+[M::mem_pestat] mean and std.dev: (1130.50, 1281.77)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7301)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 138276 reads in 5.038 CPU sec, 2.766 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (588, 58097, 19, 570)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (243, 676, 1827)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4995)
+[M::mem_pestat] mean and std.dev: (1025.63, 1070.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6579)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (179, 260, 381)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 785)
+[M::mem_pestat] mean and std.dev: (290.00, 149.08)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 987)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (62, 162, 1464)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4268)
+[M::mem_pestat] mean and std.dev: (609.67, 761.15)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 5670)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (311, 728, 2326)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6356)
+[M::mem_pestat] mean and std.dev: (1331.25, 1508.55)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8371)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 133564 reads in 5.353 CPU sec, 3.035 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:SRR2584405\tSM:SRR2584405\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/SRR2584405_1.fastq trimmed/SRR2584405_2.fastq
+[main] Real time: 6.151 sec; CPU: 10.544 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+samtools index bam/SRR2584405.sorted.bam
+prefetch SRR2584406
+2026-10-18T23:01:32 prefetch.3.4.1: 1) Resolving 'SRR2584406'...
+2026-10-18T23:01:34 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+2026-10-18T23:01:34 prefetch.3.4.1: 1) Downloading 'SRR2584406'...
+2026-10-18T23:01:34 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-18T23:01:34 prefetch.3.4.1:  Downloading via HTTPS...
+2026-10-18T23:02:25 prefetch.3.4.1:  HTTPS download succeed
+2026-10-18T23:02:25 prefetch.3.4.1:  'SRR2584406' is valid: 238072051 bytes were streamed from 238062607
+2026-10-18T23:02:25 prefetch.3.4.1: 1) 'SRR2584406' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw SRR2584406
+spots read      : 1,249,276
+reads read      : 2,498,552
+reads written   : 2,498,552
+test -s "raw/SRR2584406_1.fastq"
+test -s "raw/SRR2584406_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584406_1.fastq" > "raw/SRR2584406_1.tmp.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584406_2.fastq" > "raw/SRR2584406_2.tmp.fastq"
+mv "raw/SRR2584406_1.tmp.fastq" "raw/SRR2584406_1.fastq"
+mv "raw/SRR2584406_2.tmp.fastq" "raw/SRR2584406_2.fastq"
+touch raw/SRR2584406.done
+fastp --thread 2 \
+	-i "raw/SRR2584406_1.fastq" -I "raw/SRR2584406_2.fastq" \
+	-o "trimmed/SRR2584406_1.fastq" -O "trimmed/SRR2584406_2.fastq" \
+	--html "trimmed/SRR2584406.html" --json "trimmed/SRR2584406.json"
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21956451(94.4363%)
+Q30 bases: 20466626(88.0285%)
+Q40 bases: 3960052(17.0325%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 19898957(85.5869%)
+Q30 bases: 17883136(76.9167%)
+Q40 bases: 3251016(13.9829%)
+
+Read1 after filtering:
+total reads: 134570
+total bases: 18481585
+Q20 bases: 18073171(97.7902%)
+Q30 bases: 17150678(92.7987%)
+Q40 bases: 3659039(19.7983%)
+
+Read2 after filtering:
+total reads: 134570
+total bases: 18481585
+Q20 bases: 17738810(95.981%)
+Q30 bases: 16143232(87.3477%)
+Q40 bases: 3110432(16.8299%)
+
+Filtering result:
+reads passed filter: 269140
+reads failed due to low quality: 40734
+reads failed due to too many N: 126
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 59866
+bases trimmed due to adapters: 3455102
+
+Duplication rate: 0.0529032%
+
+Insert size peak (evaluated by paired-end reads): 102
+
+JSON report: trimmed/SRR2584406.json
+HTML report: trimmed/SRR2584406.html
+
+fastp --thread 2 -i raw/SRR2584406_1.fastq -I raw/SRR2584406_2.fastq -o trimmed/SRR2584406_1.fastq -O trimmed/SRR2584406_2.fastq --html trimmed/SRR2584406.html --json trimmed/SRR2584406.json 
+fastp v1.3.6, time used: 1 seconds
+touch trimmed/SRR2584406.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:SRR2584406\tSM:SRR2584406\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/SRR2584406_1.fastq" "trimmed/SRR2584406_2.fastq" \
+	| samtools sort -@ 2 -o bam/SRR2584406.sorted.bam
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 145606 sequences (20000008 bp)...
+[M::process] read 123534 sequences (16963162 bp)...
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (434, 64459, 28, 486)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (375, 776, 2137)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5661)
+[M::mem_pestat] mean and std.dev: (1232.05, 1260.27)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7423)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (161, 347, 596)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1466)
+[M::mem_pestat] mean and std.dev: (392.02, 260.25)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1901)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (199, 1321, 6377)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 18733)
+[M::mem_pestat] mean and std.dev: (2535.93, 3037.30)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 24911)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (416, 751, 1691)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4241)
+[M::mem_pestat] mean and std.dev: (985.94, 883.01)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 5516)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 145606 reads in 4.711 CPU sec, 2.344 real sec
+[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (390, 54679, 21, 396)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (391, 813, 2066)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5416)
+[M::mem_pestat] mean and std.dev: (1153.37, 1155.76)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7091)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (162, 346, 600)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1476)
+[M::mem_pestat] mean and std.dev: (392.87, 261.65)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1914)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (361, 1075, 6196)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 17866)
+[M::mem_pestat] mean and std.dev: (2851.00, 3245.48)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 23701)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (404, 721, 1863)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4781)
+[M::mem_pestat] mean and std.dev: (1006.94, 954.91)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6240)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+[M::mem_process_seqs] Processed 123534 reads in 4.048 CPU sec, 2.051 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:SRR2584406\tSM:SRR2584406\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/SRR2584406_1.fastq trimmed/SRR2584406_2.fastq
+[main] Real time: 4.530 sec; CPU: 8.862 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+samtools index bam/SRR2584406.sorted.bam
+mkdir -p results
+set -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta \
+	--annotate FORMAT/DP,FORMAT/AD,FORMAT/ADF,FORMAT/ADR \
+	-Ou bam/SRR2584863.sorted.bam bam/SRR2584405.sorted.bam bam/SRR2584406.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Ou \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools norm -f ../week05/sequences/NC_000913.3.fasta -d all -Oz -o "results/ecoli.multisample.vcf.gz.tmp"
+[mpileup] 3 samples in 3 input files
+[mpileup] maximum number of reads per input file set to -d 250
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+Lines   total/split/joined/realigned/mismatch_removed/dup_removed/skipped:	34288/0/0/212/0/0/0
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "results/ecoli.multisample.vcf.gz.tmp"
+mv "results/ecoli.multisample.vcf.gz.tmp" results/ecoli.multisample.vcf.gz
+mv "results/ecoli.multisample.vcf.gz.tmp.csi" "results/ecoli.multisample.vcf.gz.csi"
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools stats results/ecoli.multisample.vcf.gz > results/ecoli.multisample.stats.txt
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+mkdir -p annotations
+set -o pipefail; \
+curl -fsSL "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/005/845/GCF_000005845.2_ASM584v2/GCF_000005845.2_ASM584v2_genomic.gff.gz" | gzip -dc > "annotations/NC_000913.3.coding.gff3.raw"
+awk -F '\t' 'BEGIN { OFS = "\t" } \
+	/^#/ { print; next } \
+	$1 != "NC_000913.3" { next } \
+	$3 == "gene" { print; next } \
+	$3 == "CDS" { \
+		count = split($9, attrs, ";"); \
+		id = parent = gene = ""; \
+		for (i = 1; i <= count; i++) { \
+			if (attrs[i] ~ /^ID=/) id = substr(attrs[i], 4); \
+			else if (attrs[i] ~ /^Parent=/) parent = substr(attrs[i], 8); \
+			else if (attrs[i] ~ /^gene=/) gene = substr(attrs[i], 6); \
+		} \
+		transcript = "transcript-" id; \
+		$3 = "mRNA"; \
+		$9 = "ID=" transcript ";Parent=" parent ";biotype=protein_coding"; \
+		if (gene != "") $9 = $9 ";gene=" gene; \
+		print; \
+		$3 = "CDS"; \
+		sub(/Parent=[^;]*/, "Parent=" transcript, $9); \
+		print; \
+	}' "annotations/NC_000913.3.coding.gff3.raw" > "annotations/NC_000913.3.coding.gff3.tmp"
+mv "annotations/NC_000913.3.coding.gff3.tmp" annotations/NC_000913.3.coding.gff3
+rm -f "annotations/NC_000913.3.coding.gff3.raw"
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools csq -f ../week05/sequences/NC_000913.3.fasta -g annotations/NC_000913.3.coding.gff3 -Oz -o "results/ecoli.multisample.annotated.vcf.gz.tmp" results/ecoli.multisample.vcf.gz
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
+Parsing annotations/NC_000913.3.coding.gff3 ...
+Warning: The GFF contains features outside the transcript boundaries .. transcript-cds-gnl|b0240|CDS251
+Warning: GFF contains overlapping CDS transcript-cds-YP_009518751.1, 492092-493375 and 493375-493386 (ribosomal slippage?)
+Note: truncated transcript transcript-cds-b4583 with incomplete CDS (this is very common)
+Indexed 4318 transcripts, 0 exons, 4340 CDSs, 0 UTRs
+Warning: 2 warnings were suppressed, increase verbosity to see them all
+Calling...
+Warning: Skipping overlapping variants at NC_000913.3:630847, sample SRR2584863	C>A.
+         This message is printed only once, the verbosity can be increased with `--verbosity 2`
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "results/ecoli.multisample.annotated.vcf.gz.tmp"
+mv "results/ecoli.multisample.annotated.vcf.gz.tmp" results/ecoli.multisample.annotated.vcf.gz
+mv "results/ecoli.multisample.annotated.vcf.gz.tmp.csi" "results/ecoli.multisample.annotated.vcf.gz.csi"
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools stats results/ecoli.multisample.annotated.vcf.gz > results/ecoli.multisample.annotated.stats.txt
+[W::bcf_hdr_check_sanity] MQ should be declared as Type=Float
