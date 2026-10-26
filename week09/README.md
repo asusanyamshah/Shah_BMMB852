@@ -6,9 +6,8 @@ This workflow automates the single-sample variant-calling Makefile from previous
 
 **BioProject [PRJNA295606](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA295606)** — *Escherichia coli* B str. REL606, "E. coli genome evolution over 50,000 generations." 
 
-- **Samples in the BioProject:** 224 SRA experiments / 224 BioSamples,
-  ~177 Gbases total.
-- **What the project studies:** how asexual *E. coli* populations accumulate
+- **Samples in the BioProject:** 224 SRA experiments 
+- **What the project studies:** how asexual E. coli populations accumulate
   mutations and adapt over tens of thousands of generations under constant
   lab conditions.
 - **Samples used here:** 10 paired-end runs selected from this BioProject.
@@ -26,23 +25,21 @@ This workflow automates the single-sample variant-calling Makefile from previous
   | SRR2584819 | REL7178A |
   | SRR2584892 | REL968A |
 
-  Note: `PRJNA295606` contains a mix of paired-end and single-end runs; the
+  Note: `PRJNA295606` contains a mix of paired-end and single-end runs and the
   Makefile's `bwa mem` alignment step requires paired-end reads, so
-  candidates were filtered to `library_layout == PAIRED` before selecting
+  candidates were filtered before selecting
   the 10 smallest runs.
-- **Reference genome:** `NC_000913.3` (*E. coli* K-12 MG1655), reused from
+- **Reference genome:** `NC_000913.3` which is reused from
   Week 05. 
   
 ## The design file
 `design.csv` was generated directly from the BioProject's SRA metadata.
 
 Each row is a unique run; `run_accession` maps to `SRR` and `sample_alias`
-maps to `SAMPLE` in the Makefile, matching the `{run_accession}` /
-`{sample_alias}` placeholders used by `parallel --header :`.
+maps to `SAMPLE` in the Makefile
 
 ## How to run
 
-**1. Single-sample test** 
 
 ```sh
 make all SRR=SRR2584783 SAMPLE=REL4537B
@@ -50,7 +47,6 @@ make all SRR=SRR2584783 SAMPLE=REL4537B
 
 This produces `vcf/REL4537B.vcf.gz`
 
-**2. Batch run**
 
 ```sh
 make batch
@@ -60,7 +56,6 @@ make batch
 cat design.csv | parallel --colsep , --header : --eta --lb -j 3 \
     make SRR={run_accession} SAMPLE={sample_alias} N=155000 THREADS=2 all
 ```
-**3. Merge into one multi-sample VCF:**
 
 ```sh
 make merge
