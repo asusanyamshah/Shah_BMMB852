@@ -4,3 +4,13 @@ week05/trimmed/
 week05/bam/
 week05/sequences/
 week05/stats/
+
+# week09 regeneratable intermediates
+week09/raw/
+week09/trimmed/
+week09/bam/
+
+# week08 regeneratable intermediates
+week08/raw/
+week08/trimmed/
+week08/bam/

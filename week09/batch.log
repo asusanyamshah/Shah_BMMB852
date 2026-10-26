@@ -1,0 +1,1234 @@
+cat design.csv | parallel --colsep , --header : --eta --lb -j 3 \
+	make SRR={run_accession} SAMPLE={sample_alias} N=155000 THREADS=2 all
+
+Computers / CPU threads / Max jobs to run
+1:local / 8 / 3
+
+Computer:jobs running/jobs completed/%of started jobs/Average seconds to complete
+ETA: 0s Left: 10 AVG: 0.00s  local:3/0/100%/0.0s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 0s Left: 9 AVG: 0.00s  local:2/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:2/1/100%/2.0s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584880 -O raw
+make[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584679 -O raw
+ETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584715 -O raw
+ETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [K2026-10-23T22:02:35 prefetch.3.4.1: 1) Resolving 'SRR2584880'...
+2026-10-23T22:02:35 prefetch.3.4.1: 1) Resolving 'SRR2584679'...
+2026-10-23T22:02:35 prefetch.3.4.1: 1) Resolving 'SRR2584715'...
+ETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 0s Left: 9 AVG: 0.00s  local:3/1/100%/2.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [K2026-10-23T22:02:36 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+2026-10-23T22:02:36 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+2026-10-23T22:02:36 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [K2026-10-23T22:02:36 prefetch.3.4.1: 1) Downloading 'SRR2584880'...
+2026-10-23T22:02:36 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:02:36 prefetch.3.4.1:  Downloading via HTTPS...
+2026-10-23T22:02:36 prefetch.3.4.1: 1) Downloading 'SRR2584679'...
+2026-10-23T22:02:36 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:02:36 prefetch.3.4.1:  Downloading via HTTPS...
+2026-10-23T22:02:36 prefetch.3.4.1: 1) Downloading 'SRR2584715'...
+2026-10-23T22:02:36 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:02:36 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 1.00s  local:3/1/100%/3.0s [KETA: 9s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 10s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 10s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 12s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 12s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 12s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 12s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 14s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 14s Left: 9 AVG: 2.00s  local:3/1/100%/4.0s [KETA: 14s Left: 9 AVG: 3.00s  local:3/1/100%/5.0s [KETA: 16s Left: 9 AVG: 3.00s  local:3/1/100%/5.0s [KETA: 16s Left: 9 AVG: 3.00s  local:3/1/100%/5.0s [KETA: 18s Left: 9 AVG: 3.00s  local:3/1/100%/5.0s [KETA: 18s Left: 9 AVG: 3.00s  local:3/1/100%/5.0s [KETA: 21s Left: 9 AVG: 4.00s  local:3/1/100%/6.0s [KETA: 21s Left: 9 AVG: 4.00s  local:3/1/100%/6.0s [KETA: 24s Left: 9 AVG: 4.00s  local:3/1/100%/6.0s [KETA: 24s Left: 9 AVG: 5.00s  local:3/1/100%/7.0s [KETA: 28s Left: 9 AVG: 5.00s  local:3/1/100%/7.0s [KETA: 28s Left: 9 AVG: 5.00s  local:3/1/100%/7.0s [KETA: 32s Left: 9 AVG: 6.00s  local:3/1/100%/8.0s [KETA: 32s Left: 9 AVG: 6.00s  local:3/1/100%/8.0s [KETA: 37s Left: 9 AVG: 7.00s  local:3/1/100%/9.0s [KETA: 37s Left: 9 AVG: 8.00s  local:3/1/100%/10.0s [KETA: 43s Left: 9 AVG: 8.00s  local:3/1/100%/10.0s [KETA: 43s Left: 9 AVG: 9.00s  local:3/1/100%/11.0s [KETA: 51s Left: 9 AVG: 10.00s  local:3/1/100%/12.0s [KETA: 51s Left: 9 AVG: 11.00s  local:3/1/100%/13.0s [KETA: 61s Left: 9 AVG: 12.00s  local:3/1/100%/14.0s [KETA: 61s Left: 9 AVG: 13.00s  local:3/1/100%/15.0s [KETA: 73s Left: 9 AVG: 14.00s  local:3/1/100%/16.0s [KETA: 73s Left: 9 AVG: 15.00s  local:3/1/100%/17.0s [KETA: 85s Left: 9 AVG: 16.00s  local:3/1/100%/18.0s [KETA: 85s Left: 9 AVG: 17.00s  local:3/1/100%/19.0s [KETA: 99s Left: 9 AVG: 18.00s  local:3/1/100%/20.0s [KETA: 99s Left: 9 AVG: 19.00s  local:3/1/100%/21.0s [KETA: 113s Left: 9 AVG: 20.00s  local:3/1/100%/22.0s [KETA: 113s Left: 9 AVG: 21.00s  local:3/1/100%/23.0s [KETA: 129s Left: 9 AVG: 23.00s  local:3/1/100%/25.0s [KETA: 129s Left: 9 AVG: 24.00s  local:3/1/100%/26.0s [KETA: 147s Left: 9 AVG: 25.00s  local:3/1/100%/27.0s [KETA: 147s Left: 9 AVG: 26.00s  local:3/1/100%/28.0s [KETA: 164s Left: 9 AVG: 27.00s  local:3/1/100%/29.0s [KETA: 164s Left: 9 AVG: 28.00s  local:3/1/100%/30.0s [KETA: 164s Left: 9 AVG: 29.00s  local:3/1/100%/31.0s [KETA: 190s Left: 9 AVG: 30.00s  local:3/1/100%/32.0s [KETA: 190s Left: 9 AVG: 31.00s  local:3/1/100%/33.0s [KETA: 190s Left: 9 AVG: 32.00s  local:3/1/100%/34.0s [KETA: 217s Left: 9 AVG: 33.00s  local:3/1/100%/35.0s [KETA: 217s Left: 9 AVG: 34.00s  local:3/1/100%/36.0s [KETA: 217s Left: 9 AVG: 35.00s  local:3/1/100%/38.0s [KETA: 244s Left: 9 AVG: 37.00s  local:3/1/100%/39.0s [KETA: 244s Left: 9 AVG: 38.00s  local:3/1/100%/40.0s [KETA: 244s Left: 9 AVG: 39.00s  local:3/1/100%/41.0s [KETA: 273s Left: 9 AVG: 40.00s  local:3/1/100%/42.0s [KETA: 273s Left: 9 AVG: 41.00s  local:3/1/100%/43.0s [KETA: 273s Left: 9 AVG: 42.00s  local:3/1/100%/44.0s [KETA: 273s Left: 9 AVG: 43.00s  local:3/1/100%/45.0s [KETA: 311s Left: 9 AVG: 44.00s  local:3/1/100%/46.0s [KETA: 311s Left: 9 AVG: 45.00s  local:3/1/100%/47.0s [KETA: 311s Left: 9 AVG: 46.00s  local:3/1/100%/48.0s [KETA: 311s Left: 9 AVG: 47.00s  local:3/1/100%/49.0s [KETA: 348s Left: 9 AVG: 48.00s  local:3/1/100%/50.0s [KETA: 348s Left: 9 AVG: 50.00s  local:3/1/100%/52.0s [KETA: 348s Left: 9 AVG: 51.00s  local:3/1/100%/53.0s [KETA: 348s Left: 9 AVG: 52.00s  local:3/1/100%/54.0s [KETA: 388s Left: 9 AVG: 53.00s  local:3/1/100%/55.0s [KETA: 388s Left: 9 AVG: 54.00s  local:3/1/100%/56.0s [KETA: 388s Left: 9 AVG: 55.00s  local:3/1/100%/57.0s [KETA: 388s Left: 9 AVG: 56.00s  local:3/1/100%/58.0s [KETA: 388s Left: 9 AVG: 57.00s  local:3/1/100%/59.0s [KETA: 436s Left: 9 AVG: 58.00s  local:3/1/100%/60.0s [KETA: 436s Left: 9 AVG: 59.00s  local:3/1/100%/61.0s [KETA: 436s Left: 9 AVG: 60.00s  local:3/1/100%/62.0s [KETA: 436s Left: 9 AVG: 61.00s  local:3/1/100%/63.0s [KETA: 436s Left: 9 AVG: 63.00s  local:3/1/100%/65.0s [KETA: 485s Left: 9 AVG: 64.00s  local:3/1/100%/66.0s [KETA: 485s Left: 9 AVG: 65.00s  local:3/1/100%/67.0s [KETA: 485s Left: 9 AVG: 66.00s  local:3/1/100%/68.0s [KETA: 485s Left: 9 AVG: 67.00s  local:3/1/100%/69.0s [KETA: 485s Left: 9 AVG: 68.00s  local:3/1/100%/70.0s [KETA: 485s Left: 9 AVG: 69.00s  local:3/1/100%/71.0s [KETA: 543s Left: 9 AVG: 70.00s  local:3/1/100%/72.0s [KETA: 543s Left: 9 AVG: 71.00s  local:3/1/100%/73.0s [KETA: 543s Left: 9 AVG: 72.00s  local:3/1/100%/74.0s [KETA: 543s Left: 9 AVG: 73.00s  local:3/1/100%/75.0s [KETA: 543s Left: 9 AVG: 74.00s  local:3/1/100%/76.0s [KETA: 543s Left: 9 AVG: 76.00s  local:3/1/100%/78.0s [KETA: 543s Left: 9 AVG: 77.00s  local:3/1/100%/79.0s [K2026-10-23T22:03:51 prefetch.3.4.1:  HTTPS download succeed
+2026-10-23T22:03:51 prefetch.3.4.1:  'SRR2584679' is valid: 143670636 bytes were streamed from 143656887
+2026-10-23T22:03:51 prefetch.3.4.1: 1) 'SRR2584679' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584679/SRR2584679.sra
+ETA: 611s Left: 9 AVG: 77.00s  local:3/1/100%/79.0s [KETA: 611s Left: 9 AVG: 78.00s  local:3/1/100%/80.0s [KETA: 611s Left: 9 AVG: 78.00s  local:3/1/100%/80.0s [KETA: 611s Left: 9 AVG: 79.00s  local:3/1/100%/81.0s [KETA: 611s Left: 9 AVG: 80.00s  local:3/1/100%/82.0s [Ktest -s "raw/SRR2584679_1.fastq"
+test -s "raw/SRR2584679_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584679_1.fastq" > "raw/REL4532A_1.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584679_2.fastq" > "raw/REL4532A_2.fastq"
+spots read      : 740,097
+reads read      : 1,480,194
+reads written   : 1,480,194
+ETA: 611s Left: 9 AVG: 80.00s  local:3/1/100%/82.0s [Krm -rf "raw/SRR2584679" "raw/SRR2584679_1.fastq" "raw/SRR2584679_2.fastq"
+touch raw/REL4532A.done
+fastp --thread 2 \
+	-i "raw/REL4532A_1.fastq" -I "raw/REL4532A_2.fastq" \
+	-o "trimmed/REL4532A_1.fastq" -O "trimmed/REL4532A_2.fastq" \
+	--html "trimmed/REL4532A.html" --json "trimmed/REL4532A.json"
+ETA: 611s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KRead1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 19018864(81.8016%)
+Q30 bases: 16721549(71.9206%)
+Q40 bases: 2829666(12.1706%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21938239(94.358%)
+Q30 bases: 20433699(87.8869%)
+Q40 bases: 3951518(16.9958%)
+
+Read1 after filtering:
+total reads: 128595
+total bases: 17591964
+Q20 bases: 16698579(94.9216%)
+Q30 bases: 14902548(84.7122%)
+Q40 bases: 2699095(15.3428%)
+
+Read2 after filtering:
+total reads: 128595
+total bases: 17591964
+Q20 bases: 17198983(97.7661%)
+Q30 bases: 16351625(92.9494%)
+Q40 bases: 3547584(20.1659%)
+
+Filtering result:
+reads passed filter: 257190
+reads failed due to low quality: 52700
+reads failed due to too many N: 110
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 60410
+bases trimmed due to adapters: 3459064
+
+Duplication rate: 0.0458065%
+
+Insert size peak (evaluated by paired-end reads): 118
+ETA: 611s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [Ktouch trimmed/REL4532A.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL4532A\tSM:REL4532A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL4532A_1.fastq" "trimmed/REL4532A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL4532A.sorted.bam
+
+JSON report: trimmed/REL4532A.json
+HTML report: trimmed/REL4532A.html
+
+fastp --thread 2 -i raw/REL4532A_1.fastq -I raw/REL4532A_2.fastq -o trimmed/REL4532A_1.fastq -O trimmed/REL4532A_2.fastq --html trimmed/REL4532A.html --json trimmed/REL4532A.json 
+fastp v1.3.6, time used: 1 seconds
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 146280 sequences (20000158 bp)...
+ETA: 611s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [K[M::process] read 110910 sequences (15183770 bp)...
+ETA: 611s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [K2026-10-23T22:03:56 prefetch.3.4.1:  HTTPS download succeed
+ETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [K2026-10-23T22:03:56 prefetch.3.4.1:  'SRR2584880' is valid: 136395476 bytes were streamed from 136381475
+2026-10-23T22:03:56 prefetch.3.4.1: 1) 'SRR2584880' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584880/SRR2584880.sra
+ETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 81.00s  local:3/1/100%/83.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 82.00s  local:3/1/100%/84.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (472, 64771, 23, 476)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (351, 742, 2378)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6432)
+[M::mem_pestat] mean and std.dev: (1319.03, 1468.77)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8459)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (154, 324, 567)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1393)
+[M::mem_pestat] mean and std.dev: (371.68, 247.00)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1806)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (42, 309, 2808)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 8340)
+[M::mem_pestat] mean and std.dev: (1202.91, 1664.21)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 11106)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (404, 828, 2111)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5525)
+[M::mem_pestat] mean and std.dev: (1249.10, 1301.14)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7232)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [K[M::mem_process_seqs] Processed 146280 reads in 4.618 CPU sec, 2.301 real sec
+ETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 83.00s  local:3/1/100%/85.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [Ktest -s "raw/SRR2584880_1.fastq"
+test -s "raw/SRR2584880_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584880_1.fastq" > "raw/REL7180A_1.fastq"
+spots read      : 702,565
+reads read      : 1,405,130
+reads written   : 1,405,130
+ETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [Khead -n $(( 155000 * 4 )) "raw/SRR2584880_2.fastq" > "raw/REL7180A_2.fastq"
+ETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [Krm -rf "raw/SRR2584880" "raw/SRR2584880_1.fastq" "raw/SRR2584880_2.fastq"
+ETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [Ktouch raw/REL7180A.done
+fastp --thread 2 \
+	-i "raw/REL7180A_1.fastq" -I "raw/REL7180A_2.fastq" \
+	-o "trimmed/REL7180A_1.fastq" -O "trimmed/REL7180A_2.fastq" \
+	--html "trimmed/REL7180A.html" --json "trimmed/REL7180A.json"
+ETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 84.00s  local:3/1/100%/86.0s [KETA: 683s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 683s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (320, 49178, 14, 278)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (377, 738, 2089)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5513)
+[M::mem_pestat] mean and std.dev: (1193.60, 1186.21)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7225)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (156, 331, 581)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1431)
+[M::mem_pestat] mean and std.dev: (380.02, 254.29)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1856)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (64, 233, 4830)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 14362)
+[M::mem_pestat] mean and std.dev: (2087.43, 3181.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 19128)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (392, 767, 1795)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4601)
+[M::mem_pestat] mean and std.dev: (1088.03, 993.47)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6004)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 683s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 683s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 683s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KRead1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21918404(94.2727%)
+Q30 bases: 20405489(87.7655%)
+Q40 bases: 3931553(16.9099%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 19214617(82.6435%)
+Q30 bases: 16928151(72.8093%)
+Q40 bases: 2858009(12.2925%)
+
+Read1 after filtering:
+total reads: 129510
+total bases: 17853728
+Q20 bases: 17426797(97.6087%)
+Q30 bases: 16539977(92.6416%)
+Q40 bases: 3544712(19.8542%)
+
+Read2 after filtering:
+total reads: 129510
+total bases: 17853728
+Q20 bases: 16973924(95.0722%)
+Q30 bases: 15172866(84.9843%)
+Q40 bases: 2729106(15.2859%)
+
+Filtering result:
+reads passed filter: 259020
+reads failed due to low quality: 50874
+reads failed due to too many N: 106
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 55596
+bases trimmed due to adapters: 3192856
+
+Duplication rate: 0.0477419%
+
+Insert size peak (evaluated by paired-end reads): 70
+
+JSON report: trimmed/REL7180A.json
+HTML report: trimmed/REL7180A.html
+
+fastp --thread 2 -i raw/REL7180A_1.fastq -I raw/REL7180A_2.fastq -o trimmed/REL7180A_1.fastq -O trimmed/REL7180A_2.fastq --html trimmed/REL7180A.html --json trimmed/REL7180A.json 
+fastp v1.3.6, time used: 1 seconds
+[M::mem_process_seqs] Processed 110910 reads in 3.771 CPU sec, 1.907 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL4532A\tSM:REL4532A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL4532A_1.fastq trimmed/REL4532A_2.fastq
+[main] Real time: 4.316 sec; CPU: 8.486 sec
+ETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [Ktouch trimmed/REL7180A.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL7180A\tSM:REL7180A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL7180A_1.fastq" "trimmed/REL7180A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL7180A.sorted.bam
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [K[M::process] read 145182 sequences (20000082 bp)...
+ETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [K[M::process] read 113838 sequences (15707374 bp)...
+ETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 85.00s  local:3/1/100%/87.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [Ksamtools index bam/REL4532A.sorted.bam
+ETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL4532A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL4532A.vcf.gz.tmp"
+2026-10-23T22:04:01 prefetch.3.4.1:  HTTPS download succeed
+ETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [K[mpileup] 1 samples in 1 input files
+ETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [K2026-10-23T22:04:01 prefetch.3.4.1:  'SRR2584715' is valid: 147449902 bytes were streamed from 147440574
+2026-10-23T22:04:01 prefetch.3.4.1: 1) 'SRR2584715' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584715/SRR2584715.sra
+ETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 86.00s  local:3/1/100%/88.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (676, 63022, 41, 756)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (443, 997, 2403)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6323)
+[M::mem_pestat] mean and std.dev: (1443.65, 1451.61)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8283)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (163, 345, 584)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1426)
+[M::mem_pestat] mean and std.dev: (385.17, 251.64)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1847)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (161, 864, 5270)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 15488)
+[M::mem_pestat] mean and std.dev: (2476.51, 2878.96)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 20597)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (421, 891, 2465)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6553)
+[M::mem_pestat] mean and std.dev: (1447.87, 1530.07)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8597)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [KETA: 759s Left: 9 AVG: 87.00s  local:3/1/100%/89.0s [K[M::mem_process_seqs] Processed 145182 reads in 4.936 CPU sec, 2.462 real sec
+ETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 88.00s  local:3/1/100%/90.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [Ktest -s "raw/SRR2584715_1.fastq"
+test -s "raw/SRR2584715_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584715_1.fastq" > "raw/REL4537A_1.fastq"
+spots read      : 759,171
+reads read      : 1,518,342
+reads written   : 1,518,342
+ETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [Khead -n $(( 155000 * 4 )) "raw/SRR2584715_2.fastq" > "raw/REL4537A_2.fastq"
+ETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [Krm -rf "raw/SRR2584715" "raw/SRR2584715_1.fastq" "raw/SRR2584715_2.fastq"
+ETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [Ktouch raw/REL4537A.done
+fastp --thread 2 \
+	-i "raw/REL4537A_1.fastq" -I "raw/REL4537A_2.fastq" \
+	-o "trimmed/REL4537A_1.fastq" -O "trimmed/REL4537A_2.fastq" \
+	--html "trimmed/REL4537A.html" --json "trimmed/REL4537A.json"
+ETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (553, 49384, 27, 602)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (417, 869, 2292)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6042)
+[M::mem_pestat] mean and std.dev: (1372.55, 1417.88)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7917)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (164, 348, 593)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1451)
+[M::mem_pestat] mean and std.dev: (391.53, 257.42)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1880)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (112, 200, 1773)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5095)
+[M::mem_pestat] mean and std.dev: (928.41, 1277.04)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6756)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (374, 785, 2446)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6590)
+[M::mem_pestat] mean and std.dev: (1451.37, 1604.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8662)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 89.00s  local:3/1/100%/91.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[M::mem_process_seqs] Processed 113838 reads in 4.103 CPU sec, 2.085 real sec
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL7180A\tSM:REL7180A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL7180A_1.fastq trimmed/REL7180A_2.fastq
+[main] Real time: 4.682 sec; CPU: 9.157 sec
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21976825(94.524%)
+Q30 bases: 20475753(88.0678%)
+Q40 bases: 3941665(16.9534%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 18929111(81.4155%)
+Q30 bases: 16670067(71.6992%)
+Q40 bases: 2830709(12.1751%)
+
+Read1 after filtering:
+total reads: 127732
+total bases: 17528185
+Q20 bases: 17160335(97.9014%)
+Q30 bases: 16345142(93.2506%)
+Q40 bases: 3530996(20.1447%)
+
+Read2 after filtering:
+total reads: 127732
+total bases: 17528185
+Q20 bases: 16659605(95.0447%)
+Q30 bases: 14891981(84.9602%)
+Q40 bases: 2705265(15.4338%)
+
+Filtering result:
+reads passed filter: 255464
+reads failed due to low quality: 54388
+reads failed due to too many N: 148
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 57138
+bases trimmed due to adapters: 3307652
+
+Duplication rate: 0.0516129%
+
+Insert size peak (evaluated by paired-end reads): 87
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [Ktouch trimmed/REL4537A.trimmed
+
+JSON report: trimmed/REL4537A.json
+HTML report: trimmed/REL4537A.html
+
+fastp --thread 2 -i raw/REL4537A_1.fastq -I raw/REL4537A_2.fastq -o trimmed/REL4537A_1.fastq -O trimmed/REL4537A_2.fastq --html trimmed/REL4537A.html --json trimmed/REL4537A.json 
+fastp v1.3.6, time used: 1 seconds
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [Kbwa mem -t 2 \
+	-R "@RG\tID:REL4537A\tSM:REL4537A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL4537A_1.fastq" "trimmed/REL4537A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL4537A.sorted.bam
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[M::process] read 146074 sequences (20000130 bp)...
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[M::process] read 109390 sequences (15056240 bp)...
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [Ksamtools index bam/REL7180A.sorted.bam
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL7180A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL7180A.vcf.gz.tmp"
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [K[mpileup] 1 samples in 1 input files
+ETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 90.00s  local:3/1/100%/92.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 91.00s  local:3/1/100%/93.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (744, 63386, 22, 708)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (453, 928, 2923)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7863)
+[M::mem_pestat] mean and std.dev: (1796.27, 1884.35)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 10333)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+ETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [K[M::mem_pestat] (25, 50, 75) percentile: (154, 327, 579)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1429)
+[M::mem_pestat] mean and std.dev: (379.16, 256.63)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1854)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (129, 622, 2367)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6843)
+[M::mem_pestat] mean and std.dev: (1254.77, 1569.08)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9081)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (379, 817, 2526)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6820)
+[M::mem_pestat] mean and std.dev: (1486.92, 1610.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8967)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [K[M::mem_process_seqs] Processed 146074 reads in 4.862 CPU sec, 2.416 real sec
+ETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 92.00s  local:3/1/100%/94.0s [KETA: 759s Left: 9 AVG: 93.00s  local:3/1/100%/95.0s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL4532A.vcf.gz.tmp"
+mv "vcf/REL4532A.vcf.gz.tmp" vcf/REL4532A.vcf.gz
+mv "vcf/REL4532A.vcf.gz.tmp.csi" "vcf/REL4532A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 662s Left: 8 AVG: 46.50s  local:2/2/100%/47.5s [KETA: 604s Left: 8 AVG: 46.50s  local:2/2/100%/47.5s [KETA: 558s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584897 -O raw
+ETA: 520s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 491s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [K2026-10-23T22:04:08 prefetch.3.4.1: 1) Resolving 'SRR2584897'...
+ETA: 467s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 448s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 433s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 420s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 411s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 403s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 396s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 391s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 387s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 384s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 382s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 380s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 378s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 377s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 376s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 375s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 374s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 374s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 373s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 373s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 373s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 46.50s  local:3/2/100%/47.5s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (561, 47244, 21, 580)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (420, 879, 2442)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6486)
+[M::mem_pestat] mean and std.dev: (1410.56, 1479.61)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8508)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (164, 351, 616)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1520)
+[M::mem_pestat] mean and std.dev: (401.32, 269.21)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1972)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (124, 599, 4481)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 13195)
+[M::mem_pestat] mean and std.dev: (1979.52, 2407.96)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 17552)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (447, 888, 2798)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7500)
+[M::mem_pestat] mean and std.dev: (1659.49, 1823.00)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9851)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [K2026-10-23T22:04:09 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [K[M::mem_process_seqs] Processed 109390 reads in 3.684 CPU sec, 1.822 real sec
+ETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [K[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL4537A\tSM:REL4537A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL4537A_1.fastq trimmed/REL4537A_2.fastq
+[main] Real time: 4.336 sec; CPU: 8.633 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [K2026-10-23T22:04:09 prefetch.3.4.1: 1) Downloading 'SRR2584897'...
+2026-10-23T22:04:09 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:04:09 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.00s  local:3/2/100%/48.0s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [Ksamtools index bam/REL4537A.sorted.bam
+ETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL4537A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL4537A.vcf.gz.tmp"
+ETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [K[mpileup] 1 samples in 1 input files
+ETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 47.50s  local:3/2/100%/48.5s [KETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [KETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [KETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [KETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [KETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL7180A.vcf.gz.tmp"
+ETA: 372s Left: 8 AVG: 48.00s  local:3/2/100%/49.0s [Kmv "vcf/REL7180A.vcf.gz.tmp" vcf/REL7180A.vcf.gz
+mv "vcf/REL7180A.vcf.gz.tmp.csi" "vcf/REL7180A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 301s Left: 7 AVG: 32.00s  local:2/3/100%/32.7s [KETA: 278s Left: 7 AVG: 32.00s  local:2/3/100%/32.7s [KETA: 262s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584830 -O raw
+ETA: 250s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [K2026-10-23T22:04:11 prefetch.3.4.1: 1) Resolving 'SRR2584830'...
+ETA: 242s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 237s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 233s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 230s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 228s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 227s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 226s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 225s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 225s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.00s  local:3/3/100%/32.7s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.33s  local:3/3/100%/33.0s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [K2026-10-23T22:04:13 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [K2026-10-23T22:04:13 prefetch.3.4.1: 1) Downloading 'SRR2584830'...
+2026-10-23T22:04:13 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:04:13 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 32.67s  local:3/3/100%/33.3s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.00s  local:3/3/100%/33.7s [KETA: 224s Left: 7 AVG: 33.33s  local:3/3/100%/34.0s [KETA: 224s Left: 7 AVG: 33.33s  local:3/3/100%/34.0s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL4537A.vcf.gz.tmp"
+mv "vcf/REL4537A.vcf.gz.tmp" vcf/REL4537A.vcf.gz
+mv "vcf/REL4537A.vcf.gz.tmp.csi" "vcf/REL4537A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 179s Left: 6 AVG: 25.00s  local:2/4/100%/25.5s [KETA: 167s Left: 6 AVG: 25.00s  local:2/4/100%/25.5s [KETA: 160s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584881 -O raw
+2026-10-23T22:04:15 prefetch.3.4.1: 1) Resolving 'SRR2584881'...
+ETA: 156s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 153s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 152s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 151s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.00s  local:3/4/100%/25.5s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [K2026-10-23T22:04:16 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [K2026-10-23T22:04:16 prefetch.3.4.1: 1) Downloading 'SRR2584881'...
+2026-10-23T22:04:16 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:04:16 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.25s  local:3/4/100%/25.8s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.50s  local:3/4/100%/26.0s [KETA: 150s Left: 6 AVG: 25.75s  local:3/4/100%/26.2s [KETA: 150s Left: 6 AVG: 25.75s  local:3/4/100%/26.2s [KETA: 150s Left: 6 AVG: 25.75s  local:3/4/100%/26.2s [KETA: 150s Left: 6 AVG: 25.75s  local:3/4/100%/26.2s [KETA: 150s Left: 6 AVG: 25.75s  local:3/4/100%/26.2s [KETA: 150s Left: 6 AVG: 26.00s  local:3/4/100%/26.5s [KETA: 150s Left: 6 AVG: 26.00s  local:3/4/100%/26.5s [KETA: 150s Left: 6 AVG: 26.00s  local:3/4/100%/26.5s [KETA: 150s Left: 6 AVG: 26.00s  local:3/4/100%/26.5s [KETA: 150s Left: 6 AVG: 26.25s  local:3/4/100%/26.8s [KETA: 150s Left: 6 AVG: 26.25s  local:3/4/100%/26.8s [KETA: 150s Left: 6 AVG: 26.25s  local:3/4/100%/26.8s [KETA: 150s Left: 6 AVG: 26.50s  local:3/4/100%/27.0s [KETA: 150s Left: 6 AVG: 26.50s  local:3/4/100%/27.0s [KETA: 150s Left: 6 AVG: 26.75s  local:3/4/100%/27.2s [KETA: 150s Left: 6 AVG: 27.00s  local:3/4/100%/27.5s [KETA: 150s Left: 6 AVG: 27.00s  local:3/4/100%/27.5s [KETA: 150s Left: 6 AVG: 27.25s  local:3/4/100%/27.8s [KETA: 150s Left: 6 AVG: 27.50s  local:3/4/100%/28.0s [KETA: 150s Left: 6 AVG: 27.75s  local:3/4/100%/28.2s [KETA: 150s Left: 6 AVG: 28.00s  local:3/4/100%/28.5s [KETA: 167s Left: 6 AVG: 28.25s  local:3/4/100%/28.8s [KETA: 167s Left: 6 AVG: 28.50s  local:3/4/100%/29.0s [KETA: 167s Left: 6 AVG: 28.75s  local:3/4/100%/29.2s [KETA: 167s Left: 6 AVG: 29.00s  local:3/4/100%/29.5s [KETA: 167s Left: 6 AVG: 29.25s  local:3/4/100%/29.8s [KETA: 167s Left: 6 AVG: 29.50s  local:3/4/100%/30.0s [KETA: 167s Left: 6 AVG: 29.75s  local:3/4/100%/30.2s [KETA: 167s Left: 6 AVG: 30.00s  local:3/4/100%/30.5s [KETA: 167s Left: 6 AVG: 30.25s  local:3/4/100%/30.8s [KETA: 167s Left: 6 AVG: 30.50s  local:3/4/100%/31.0s [KETA: 167s Left: 6 AVG: 30.75s  local:3/4/100%/31.2s [KETA: 167s Left: 6 AVG: 31.00s  local:3/4/100%/31.5s [KETA: 167s Left: 6 AVG: 31.25s  local:3/4/100%/31.8s [KETA: 186s Left: 6 AVG: 31.50s  local:3/4/100%/32.0s [KETA: 186s Left: 6 AVG: 31.75s  local:3/4/100%/32.2s [KETA: 186s Left: 6 AVG: 32.00s  local:3/4/100%/32.5s [KETA: 186s Left: 6 AVG: 32.25s  local:3/4/100%/32.8s [KETA: 186s Left: 6 AVG: 32.50s  local:3/4/100%/33.0s [KETA: 186s Left: 6 AVG: 32.75s  local:3/4/100%/33.2s [KETA: 186s Left: 6 AVG: 33.00s  local:3/4/100%/33.8s [KETA: 186s Left: 6 AVG: 33.50s  local:3/4/100%/34.0s [KETA: 186s Left: 6 AVG: 33.75s  local:3/4/100%/34.2s [KETA: 186s Left: 6 AVG: 34.00s  local:3/4/100%/34.5s [KETA: 186s Left: 6 AVG: 34.25s  local:3/4/100%/34.8s [KETA: 186s Left: 6 AVG: 34.50s  local:3/4/100%/35.0s [KETA: 186s Left: 6 AVG: 34.75s  local:3/4/100%/35.2s [KETA: 207s Left: 6 AVG: 35.00s  local:3/4/100%/35.5s [KETA: 207s Left: 6 AVG: 35.25s  local:3/4/100%/35.8s [KETA: 207s Left: 6 AVG: 35.50s  local:3/4/100%/36.0s [KETA: 207s Left: 6 AVG: 35.75s  local:3/4/100%/36.2s [KETA: 207s Left: 6 AVG: 36.00s  local:3/4/100%/36.5s [KETA: 207s Left: 6 AVG: 36.25s  local:3/4/100%/36.8s [K2026-10-23T22:05:00 prefetch.3.4.1:  HTTPS download succeed
+ETA: 207s Left: 6 AVG: 36.50s  local:3/4/100%/37.0s [K2026-10-23T22:05:00 prefetch.3.4.1:  'SRR2584897' is valid: 162223525 bytes were streamed from 162222978
+2026-10-23T22:05:00 prefetch.3.4.1: 1) 'SRR2584897' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584897/SRR2584897.sra
+ETA: 207s Left: 6 AVG: 36.50s  local:3/4/100%/37.0s [KETA: 207s Left: 6 AVG: 36.50s  local:3/4/100%/37.0s [KETA: 207s Left: 6 AVG: 36.75s  local:3/4/100%/37.2s [KETA: 207s Left: 6 AVG: 36.75s  local:3/4/100%/37.2s [KETA: 207s Left: 6 AVG: 36.75s  local:3/4/100%/37.2s [KETA: 207s Left: 6 AVG: 37.00s  local:3/4/100%/37.5s [KETA: 207s Left: 6 AVG: 37.00s  local:3/4/100%/37.5s [Ktest -s "raw/SRR2584897_1.fastq"
+test -s "raw/SRR2584897_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584897_1.fastq" > "raw/REL1168B_1.fastq"
+spots read      : 1,208,296
+reads read      : 2,416,592
+reads written   : 2,416,592
+ETA: 207s Left: 6 AVG: 37.25s  local:3/4/100%/37.8s [KETA: 207s Left: 6 AVG: 37.25s  local:3/4/100%/37.8s [Khead -n $(( 155000 * 4 )) "raw/SRR2584897_2.fastq" > "raw/REL1168B_2.fastq"
+ETA: 207s Left: 6 AVG: 37.25s  local:3/4/100%/37.8s [Krm -rf "raw/SRR2584897" "raw/SRR2584897_1.fastq" "raw/SRR2584897_2.fastq"
+ETA: 207s Left: 6 AVG: 37.25s  local:3/4/100%/37.8s [Ktouch raw/REL1168B.done
+ETA: 207s Left: 6 AVG: 37.25s  local:3/4/100%/37.8s [Kfastp --thread 2 \
+	-i "raw/REL1168B_1.fastq" -I "raw/REL1168B_2.fastq" \
+	-o "trimmed/REL1168B_1.fastq" -O "trimmed/REL1168B_2.fastq" \
+	--html "trimmed/REL1168B.html" --json "trimmed/REL1168B.json"
+ETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [Ktouch trimmed/REL1168B.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL1168B\tSM:REL1168B\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL1168B_1.fastq" "trimmed/REL1168B_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL1168B.sorted.bam
+Read1 before filtering:
+total reads: 155000
+total bases: 15655000
+Q20 bases: 14512373(92.7012%)
+Q30 bases: 13420568(85.727%)
+Q40 bases: 3256222(20.7999%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 15655000
+Q20 bases: 15010272(95.8816%)
+Q30 bases: 13961322(89.1812%)
+Q40 bases: 3481687(22.2401%)
+
+Read1 after filtering:
+total reads: 144712
+total bases: 14608111
+Q20 bases: 14183570(97.0938%)
+Q30 bases: 13198970(90.3537%)
+Q40 bases: 3237961(22.1655%)
+
+Read2 after filtering:
+total reads: 144712
+total bases: 14608111
+Q20 bases: 14278728(97.7452%)
+Q30 bases: 13397779(91.7147%)
+Q40 bases: 3413638(23.3681%)
+
+Filtering result:
+reads passed filter: 289424
+reads failed due to low quality: 20242
+reads failed due to too many N: 334
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 1698
+bases trimmed due to adapters: 15984
+
+Duplication rate: 0.023871%
+
+Insert size peak (evaluated by paired-end reads): 148
+
+JSON report: trimmed/REL1168B.json
+HTML report: trimmed/REL1168B.html
+
+fastp --thread 2 -i raw/REL1168B_1.fastq -I raw/REL1168B_2.fastq -o trimmed/REL1168B_1.fastq -O trimmed/REL1168B_2.fastq --html trimmed/REL1168B.html --json trimmed/REL1168B.json 
+fastp v1.3.6, time used: 0 seconds
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [K[M::process] read 198132 sequences (20000172 bp)...
+ETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [K[M::process] read 91292 sequences (9216050 bp)...
+ETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.50s  local:3/4/100%/38.0s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 37.75s  local:3/4/100%/38.2s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (1, 88340, 2, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (151, 181, 222)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (9, 364)
+[M::mem_pestat] mean and std.dev: (188.46, 52.45)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 435)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+ETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [KETA: 207s Left: 6 AVG: 38.00s  local:3/4/100%/38.5s [K[M::mem_process_seqs] Processed 198132 reads in 4.047 CPU sec, 2.022 real sec
+ETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 40644, 4, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (150, 178, 218)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (14, 354)
+[M::mem_pestat] mean and std.dev: (186.00, 50.66)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 422)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+ETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [K[M::mem_process_seqs] Processed 91292 reads in 1.985 CPU sec, 0.976 real sec
+ETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [K[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL1168B\tSM:REL1168B\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL1168B_1.fastq trimmed/REL1168B_2.fastq
+[main] Real time: 3.102 sec; CPU: 6.124 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 207s Left: 6 AVG: 38.25s  local:3/4/100%/38.8s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [Ksamtools index bam/REL1168B.sorted.bam
+ETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL1168B.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL1168B.vcf.gz.tmp"
+ETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [K[mpileup] 1 samples in 1 input files
+ETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.50s  local:3/4/100%/39.0s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 38.75s  local:3/4/100%/39.2s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [K2026-10-23T22:05:11 prefetch.3.4.1:  HTTPS download succeed
+ETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [K2026-10-23T22:05:11 prefetch.3.4.1:  'SRR2584830' is valid: 167486382 bytes were streamed from 167481631
+2026-10-23T22:05:11 prefetch.3.4.1: 1) 'SRR2584830' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584830/SRR2584830.sra
+ETA: 230s Left: 6 AVG: 39.00s  local:3/4/100%/39.5s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.25s  local:3/4/100%/39.8s [KETA: 230s Left: 6 AVG: 39.50s  local:3/4/100%/40.0s [KETA: 230s Left: 6 AVG: 39.50s  local:3/4/100%/40.0s [KETA: 230s Left: 6 AVG: 39.50s  local:3/4/100%/40.0s [KETA: 230s Left: 6 AVG: 39.50s  local:3/4/100%/40.0s [KETA: 230s Left: 6 AVG: 39.50s  local:3/4/100%/40.0s [KETA: 230s Left: 6 AVG: 39.75s  local:3/4/100%/40.2s [KETA: 230s Left: 6 AVG: 39.75s  local:3/4/100%/40.2s [KETA: 230s Left: 6 AVG: 39.75s  local:3/4/100%/40.2s [KETA: 230s Left: 6 AVG: 39.75s  local:3/4/100%/40.2s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL1168B.vcf.gz.tmp"
+mv "vcf/REL1168B.vcf.gz.tmp" vcf/REL1168B.vcf.gz
+mv "vcf/REL1168B.vcf.gz.tmp.csi" "vcf/REL1168B.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 178s Left: 5 AVG: 31.80s  local:2/5/100%/32.2s [KETA: 168s Left: 5 AVG: 31.80s  local:2/5/100%/32.2s [Ktest -s "raw/SRR2584830_1.fastq"
+test -s "raw/SRR2584830_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584830_1.fastq" > "raw/REL7178B_1.fastq"
+spots read      : 862,148
+reads read      : 1,724,296
+reads written   : 1,724,296
+ETA: 163s Left: 5 AVG: 31.80s  local:3/5/100%/32.2s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584681 -O raw
+ETA: 161s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [K2026-10-23T22:05:14 prefetch.3.4.1: 1) Resolving 'SRR2584681'...
+ETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [Khead -n $(( 155000 * 4 )) "raw/SRR2584830_2.fastq" > "raw/REL7178B_2.fastq"
+ETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [Krm -rf "raw/SRR2584830" "raw/SRR2584830_1.fastq" "raw/SRR2584830_2.fastq"
+ETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [Ktouch raw/REL7178B.done
+ETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [Kfastp --thread 2 \
+	-i "raw/REL7178B_1.fastq" -I "raw/REL7178B_2.fastq" \
+	-o "trimmed/REL7178B_1.fastq" -O "trimmed/REL7178B_2.fastq" \
+	--html "trimmed/REL7178B.html" --json "trimmed/REL7178B.json"
+ETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.00s  local:3/5/100%/32.4s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [Ktouch trimmed/REL7178B.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL7178B\tSM:REL7178B\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL7178B_1.fastq" "trimmed/REL7178B_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL7178B.sorted.bam
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 19239713(82.7515%)
+Q30 bases: 16962383(72.9565%)
+Q40 bases: 2895820(12.4551%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21886848(94.137%)
+Q30 bases: 20351775(87.5345%)
+Q40 bases: 3925525(16.884%)
+
+Read1 after filtering:
+total reads: 129896
+total bases: 17805868
+Q20 bases: 16934218(95.1047%)
+Q30 bases: 15146972(85.0673%)
+Q40 bases: 2764530(15.5259%)
+
+Read2 after filtering:
+total reads: 129896
+total bases: 17805868
+Q20 bases: 17374234(97.5759%)
+Q30 bases: 16480722(92.5578%)
+Q40 bases: 3548623(19.9295%)
+
+Filtering result:
+reads passed filter: 259792
+reads failed due to low quality: 50102
+reads failed due to too many N: 106
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 59022
+bases trimmed due to adapters: 3414990
+
+Duplication rate: 0.0445161%
+
+Insert size peak (evaluated by paired-end reads): 97
+
+JSON report: trimmed/REL7178B.json
+HTML report: trimmed/REL7178B.html
+
+fastp --thread 2 -i raw/REL7178B_1.fastq -I raw/REL7178B_2.fastq -o trimmed/REL7178B_1.fastq -O trimmed/REL7178B_2.fastq --html trimmed/REL7178B.html --json trimmed/REL7178B.json 
+fastp v1.3.6, time used: 1 seconds
+2026-10-23T22:05:16 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [K[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [K[M::process] read 146000 sequences (20000234 bp)...
+ETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [K[M::process] read 113792 sequences (15611502 bp)...
+ETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [K2026-10-23T22:05:16 prefetch.3.4.1: 1) Downloading 'SRR2584681'...
+2026-10-23T22:05:16 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:05:16 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.20s  local:3/5/100%/32.6s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.40s  local:3/5/100%/32.8s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (429, 64619, 25, 440)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (344, 686, 2022)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5378)
+[M::mem_pestat] mean and std.dev: (1103.04, 1173.09)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7056)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (159, 336, 579)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1419)
+[M::mem_pestat] mean and std.dev: (381.04, 252.39)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1839)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (149, 539, 2442)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7028)
+[M::mem_pestat] mean and std.dev: (1351.40, 1735.78)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9321)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (393, 787, 1926)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4992)
+[M::mem_pestat] mean and std.dev: (1092.62, 1025.75)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6525)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [K[M::mem_process_seqs] Processed 146000 reads in 4.611 CPU sec, 2.296 real sec
+ETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.60s  local:3/5/100%/33.0s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 32.80s  local:3/5/100%/33.2s [KETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [KETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (325, 50244, 14, 326)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (401, 859, 2365)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6293)
+[M::mem_pestat] mean and std.dev: (1374.73, 1446.92)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8257)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (160, 346, 593)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1459)
+[M::mem_pestat] mean and std.dev: (389.87, 258.85)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1892)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (718, 1477, 3847)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 10105)
+[M::mem_pestat] mean and std.dev: (2074.57, 1766.50)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 13234)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (357, 870, 1980)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5226)
+[M::mem_pestat] mean and std.dev: (1130.70, 1102.11)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6849)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [KETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [KETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [K[M::mem_process_seqs] Processed 113792 reads in 3.883 CPU sec, 2.164 real sec
+ETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [K[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL7178B\tSM:REL7178B\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL7178B_1.fastq trimmed/REL7178B_2.fastq
+[main] Real time: 4.578 sec; CPU: 8.595 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [KETA: 160s Left: 5 AVG: 33.00s  local:3/5/100%/33.4s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [Ksamtools index bam/REL7178B.sorted.bam
+ETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL7178B.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL7178B.vcf.gz.tmp"
+ETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [K[mpileup] 1 samples in 1 input files
+ETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.20s  local:3/5/100%/33.6s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.40s  local:3/5/100%/33.8s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.60s  local:3/5/100%/34.0s [KETA: 160s Left: 5 AVG: 33.80s  local:3/5/100%/34.2s [KETA: 160s Left: 5 AVG: 33.80s  local:3/5/100%/34.2s [KETA: 160s Left: 5 AVG: 33.80s  local:3/5/100%/34.2s [KETA: 160s Left: 5 AVG: 33.80s  local:3/5/100%/34.2s [KETA: 160s Left: 5 AVG: 34.00s  local:3/5/100%/34.4s [KETA: 160s Left: 5 AVG: 34.00s  local:3/5/100%/34.4s [KETA: 160s Left: 5 AVG: 34.00s  local:3/5/100%/34.4s [KETA: 160s Left: 5 AVG: 34.20s  local:3/5/100%/34.6s [KETA: 160s Left: 5 AVG: 34.20s  local:3/5/100%/34.6s [KETA: 160s Left: 5 AVG: 34.40s  local:3/5/100%/34.8s [K2026-10-23T22:05:27 prefetch.3.4.1:  HTTPS download succeed
+ETA: 160s Left: 5 AVG: 34.40s  local:3/5/100%/34.8s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL7178B.vcf.gz.tmp"
+mv "vcf/REL7178B.vcf.gz.tmp" vcf/REL7178B.vcf.gz
+mv "vcf/REL7178B.vcf.gz.tmp.csi" "vcf/REL7178B.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 123s Left: 4 AVG: 28.67s  local:2/6/100%/29.0s [KETA: 118s Left: 4 AVG: 28.67s  local:2/6/100%/29.0s [KETA: 116s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584819 -O raw
+2026-10-23T22:05:27 prefetch.3.4.1: 1) Resolving 'SRR2584819'...
+ETA: 115s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [K2026-10-23T22:05:27 prefetch.3.4.1:  'SRR2584881' is valid: 177869851 bytes were streamed from 177853865
+2026-10-23T22:05:27 prefetch.3.4.1: 1) 'SRR2584881' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584881/SRR2584881.sra
+ETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.67s  local:3/6/100%/29.0s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [K2026-10-23T22:05:28 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [K2026-10-23T22:05:28 prefetch.3.4.1: 1) Downloading 'SRR2584819'...
+2026-10-23T22:05:28 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:05:28 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 28.83s  local:3/6/100%/29.2s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.00s  local:3/6/100%/29.3s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [Ktest -s "raw/SRR2584881_1.fastq"
+test -s "raw/SRR2584881_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584881_1.fastq" > "raw/REL7180B_1.fastq"
+spots read      : 915,096
+reads read      : 1,830,192
+reads written   : 1,830,192
+ETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [Khead -n $(( 155000 * 4 )) "raw/SRR2584881_2.fastq" > "raw/REL7180B_2.fastq"
+ETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [Krm -rf "raw/SRR2584881" "raw/SRR2584881_1.fastq" "raw/SRR2584881_2.fastq"
+ETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [Ktouch raw/REL7180B.done
+fastp --thread 2 \
+	-i "raw/REL7180B_1.fastq" -I "raw/REL7180B_2.fastq" \
+	-o "trimmed/REL7180B_1.fastq" -O "trimmed/REL7180B_2.fastq" \
+	--html "trimmed/REL7180B.html" --json "trimmed/REL7180B.json"
+ETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.17s  local:3/6/100%/29.5s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KRead1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21951735(94.4161%)
+Q30 bases: 20460543(88.0023%)
+Q40 bases: 3928462(16.8966%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 19113158(82.2071%)
+Q30 bases: 16822521(72.3549%)
+Q40 bases: 2859448(12.2987%)
+
+Read1 after filtering:
+total reads: 129421
+total bases: 17642320
+Q20 bases: 17263800(97.8545%)
+Q30 bases: 16427604(93.1148%)
+Q40 bases: 3536826(20.0474%)
+
+Read2 after filtering:
+total reads: 129421
+total bases: 17642320
+Q20 bases: 16757595(94.9852%)
+Q30 bases: 14969152(84.848%)
+Q40 bases: 2726188(15.4525%)
+
+Filtering result:
+reads passed filter: 258842
+reads failed due to low quality: 51026
+reads failed due to too many N: 132
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 62272
+bases trimmed due to adapters: 3594884
+
+Duplication rate: 0.0445161%
+
+Insert size peak (evaluated by paired-end reads): 76
+ETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [Ktouch trimmed/REL7180B.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL7180B\tSM:REL7180B\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL7180B_1.fastq" "trimmed/REL7180B_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL7180B.sorted.bam
+
+JSON report: trimmed/REL7180B.json
+HTML report: trimmed/REL7180B.html
+
+fastp --thread 2 -i raw/REL7180B_1.fastq -I raw/REL7180B_2.fastq -o trimmed/REL7180B_1.fastq -O trimmed/REL7180B_2.fastq --html trimmed/REL7180B.html --json trimmed/REL7180B.json 
+fastp v1.3.6, time used: 0 seconds
+ETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [K[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [K[M::process] read 146932 sequences (20000296 bp)...
+ETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [K[M::process] read 111910 sequences (15284344 bp)...
+ETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.33s  local:3/6/100%/29.7s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.50s  local:3/6/100%/29.8s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (432, 64974, 25, 475)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (361, 791, 2004)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5290)
+[M::mem_pestat] mean and std.dev: (1179.90, 1229.75)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6933)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (150, 312, 566)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1398)
+[M::mem_pestat] mean and std.dev: (369.63, 252.38)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1814)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (135, 496, 2414)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6972)
+[M::mem_pestat] mean and std.dev: (961.27, 1081.98)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9251)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (408, 870, 2162)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5670)
+[M::mem_pestat] mean and std.dev: (1236.50, 1260.50)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7424)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.67s  local:3/6/100%/30.0s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [K[M::mem_process_seqs] Processed 146932 reads in 4.596 CPU sec, 2.289 real sec
+ETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 29.83s  local:3/6/100%/30.2s [KETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [KETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [KETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [KETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (332, 49460, 17, 379)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (385, 722, 1776)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4558)
+[M::mem_pestat] mean and std.dev: (1034.17, 1012.25)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 5949)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (155, 322, 570)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1400)
+[M::mem_pestat] mean and std.dev: (373.55, 251.99)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1815)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (157, 247, 1104)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 2998)
+[M::mem_pestat] mean and std.dev: (323.50, 317.75)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 3945)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (394, 792, 2033)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5311)
+[M::mem_pestat] mean and std.dev: (1209.02, 1223.48)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6950)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [KETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [K[M::mem_process_seqs] Processed 111910 reads in 3.514 CPU sec, 1.744 real sec
+ETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [K[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL7180B\tSM:REL7180B\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL7180B_1.fastq trimmed/REL7180B_2.fastq
+[main] Real time: 4.131 sec; CPU: 8.198 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 114s Left: 4 AVG: 30.00s  local:3/6/100%/30.3s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [Ksamtools index bam/REL7180B.sorted.bam
+ETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL7180B.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL7180B.vcf.gz.tmp"
+ETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [K[mpileup] 1 samples in 1 input files
+ETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.17s  local:3/6/100%/30.5s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.33s  local:3/6/100%/30.7s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.50s  local:3/6/100%/30.8s [KETA: 114s Left: 4 AVG: 30.67s  local:3/6/100%/31.0s [KETA: 114s Left: 4 AVG: 30.67s  local:3/6/100%/31.0s [KETA: 114s Left: 4 AVG: 30.67s  local:3/6/100%/31.0s [KETA: 114s Left: 4 AVG: 30.67s  local:3/6/100%/31.0s [KETA: 114s Left: 4 AVG: 30.83s  local:3/6/100%/31.2s [KETA: 114s Left: 4 AVG: 30.83s  local:3/6/100%/31.2s [KETA: 114s Left: 4 AVG: 30.83s  local:3/6/100%/31.2s [KETA: 114s Left: 4 AVG: 31.00s  local:3/6/100%/31.3s [KETA: 114s Left: 4 AVG: 31.00s  local:3/6/100%/31.3s [KETA: 114s Left: 4 AVG: 31.00s  local:3/6/100%/31.3s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL7180B.vcf.gz.tmp"
+mv "vcf/REL7180B.vcf.gz.tmp" vcf/REL7180B.vcf.gz
+mv "vcf/REL7180B.vcf.gz.tmp.csi" "vcf/REL7180B.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 83s Left: 3 AVG: 26.57s  local:2/7/100%/26.9s [KETA: 80s Left: 3 AVG: 26.57s  local:2/7/100%/26.9s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [Kmake[1]: Entering directory '/Users/sanyamshah/Shah_BMMB852/week09'
+prefetch SRR2584892 -O raw
+2026-10-23T22:05:41 prefetch.3.4.1: 1) Resolving 'SRR2584892'...
+ETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.71s  local:3/7/100%/27.0s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [K2026-10-23T22:05:43 prefetch.3.4.1: Current preference is set to retrieve SRA Normalized Format files with full base quality scores
+ETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [K2026-10-23T22:05:43 prefetch.3.4.1: 1) Downloading 'SRR2584892'...
+2026-10-23T22:05:43 prefetch.3.4.1:  SRA Normalized Format file is being retrieved
+2026-10-23T22:05:43 prefetch.3.4.1:  Downloading via HTTPS...
+ETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 26.86s  local:3/7/100%/27.1s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.00s  local:3/7/100%/27.3s [KETA: 80s Left: 3 AVG: 27.14s  local:3/7/100%/27.4s [KETA: 80s Left: 3 AVG: 27.14s  local:3/7/100%/27.4s [KETA: 80s Left: 3 AVG: 27.14s  local:3/7/100%/27.4s [KETA: 80s Left: 3 AVG: 27.14s  local:3/7/100%/27.4s [KETA: 80s Left: 3 AVG: 27.14s  local:3/7/100%/27.4s [KETA: 80s Left: 3 AVG: 27.29s  local:3/7/100%/27.6s [KETA: 80s Left: 3 AVG: 27.29s  local:3/7/100%/27.6s [KETA: 80s Left: 3 AVG: 27.29s  local:3/7/100%/27.6s [KETA: 80s Left: 3 AVG: 27.43s  local:3/7/100%/27.7s [KETA: 80s Left: 3 AVG: 27.43s  local:3/7/100%/27.7s [KETA: 80s Left: 3 AVG: 27.57s  local:3/7/100%/27.9s [KETA: 80s Left: 3 AVG: 27.57s  local:3/7/100%/27.9s [KETA: 80s Left: 3 AVG: 27.71s  local:3/7/100%/28.0s [KETA: 80s Left: 3 AVG: 27.86s  local:3/7/100%/28.1s [KETA: 80s Left: 3 AVG: 27.86s  local:3/7/100%/28.1s [KETA: 80s Left: 3 AVG: 28.00s  local:3/7/100%/28.3s [KETA: 80s Left: 3 AVG: 28.14s  local:3/7/100%/28.4s [KETA: 80s Left: 3 AVG: 28.29s  local:3/7/100%/28.6s [KETA: 80s Left: 3 AVG: 28.43s  local:3/7/100%/28.7s [KETA: 80s Left: 3 AVG: 28.57s  local:3/7/100%/28.9s [KETA: 80s Left: 3 AVG: 28.71s  local:3/7/100%/29.0s [KETA: 80s Left: 3 AVG: 28.86s  local:3/7/100%/29.1s [KETA: 80s Left: 3 AVG: 29.00s  local:3/7/100%/29.3s [KETA: 80s Left: 3 AVG: 29.14s  local:3/7/100%/29.4s [KETA: 80s Left: 3 AVG: 29.29s  local:3/7/100%/29.6s [KETA: 80s Left: 3 AVG: 29.43s  local:3/7/100%/29.7s [KETA: 80s Left: 3 AVG: 29.57s  local:3/7/100%/29.9s [KETA: 80s Left: 3 AVG: 29.71s  local:3/7/100%/30.0s [KETA: 89s Left: 3 AVG: 29.86s  local:3/7/100%/30.1s [KETA: 89s Left: 3 AVG: 30.00s  local:3/7/100%/30.3s [KETA: 89s Left: 3 AVG: 30.14s  local:3/7/100%/30.4s [KETA: 89s Left: 3 AVG: 30.29s  local:3/7/100%/30.6s [KETA: 89s Left: 3 AVG: 30.43s  local:3/7/100%/30.7s [KETA: 89s Left: 3 AVG: 30.57s  local:3/7/100%/30.9s [KETA: 89s Left: 3 AVG: 30.86s  local:3/7/100%/31.1s [KETA: 89s Left: 3 AVG: 31.00s  local:3/7/100%/31.3s [KETA: 89s Left: 3 AVG: 31.14s  local:3/7/100%/31.4s [KETA: 89s Left: 3 AVG: 31.29s  local:3/7/100%/31.6s [KETA: 89s Left: 3 AVG: 31.43s  local:3/7/100%/31.7s [KETA: 89s Left: 3 AVG: 31.57s  local:3/7/100%/31.9s [KETA: 89s Left: 3 AVG: 31.71s  local:3/7/100%/32.0s [KETA: 89s Left: 3 AVG: 31.86s  local:3/7/100%/32.1s [KETA: 89s Left: 3 AVG: 32.00s  local:3/7/100%/32.3s [KETA: 89s Left: 3 AVG: 32.14s  local:3/7/100%/32.4s [KETA: 89s Left: 3 AVG: 32.29s  local:3/7/100%/32.6s [K2026-10-23T22:06:21 prefetch.3.4.1:  HTTPS download succeed
+ETA: 89s Left: 3 AVG: 32.29s  local:3/7/100%/32.6s [K2026-10-23T22:06:21 prefetch.3.4.1:  'SRR2584681' is valid: 176686977 bytes were streamed from 176685825
+2026-10-23T22:06:21 prefetch.3.4.1: 1) 'SRR2584681' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584681/SRR2584681.sra
+ETA: 89s Left: 3 AVG: 32.43s  local:3/7/100%/32.7s [KETA: 89s Left: 3 AVG: 32.43s  local:3/7/100%/32.7s [KETA: 89s Left: 3 AVG: 32.43s  local:3/7/100%/32.7s [KETA: 89s Left: 3 AVG: 32.57s  local:3/7/100%/32.9s [KETA: 89s Left: 3 AVG: 32.57s  local:3/7/100%/32.9s [KETA: 89s Left: 3 AVG: 32.71s  local:3/7/100%/33.0s [KETA: 89s Left: 3 AVG: 32.71s  local:3/7/100%/33.0s [KETA: 89s Left: 3 AVG: 32.86s  local:3/7/100%/33.1s [Ktest -s "raw/SRR2584681_1.fastq"
+test -s "raw/SRR2584681_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584681_1.fastq" > "raw/REL7185A_1.fastq"
+spots read      : 932,358
+reads read      : 1,864,716
+reads written   : 1,864,716
+ETA: 89s Left: 3 AVG: 32.86s  local:3/7/100%/33.1s [Khead -n $(( 155000 * 4 )) "raw/SRR2584681_2.fastq" > "raw/REL7185A_2.fastq"
+rm -rf "raw/SRR2584681" "raw/SRR2584681_1.fastq" "raw/SRR2584681_2.fastq"
+touch raw/REL7185A.done
+fastp --thread 2 \
+	-i "raw/REL7185A_1.fastq" -I "raw/REL7185A_2.fastq" \
+	-o "trimmed/REL7185A_1.fastq" -O "trimmed/REL7185A_2.fastq" \
+	--html "trimmed/REL7185A.html" --json "trimmed/REL7185A.json"
+ETA: 89s Left: 3 AVG: 32.86s  local:3/7/100%/33.1s [KETA: 89s Left: 3 AVG: 32.86s  local:3/7/100%/33.1s [KETA: 89s Left: 3 AVG: 32.86s  local:3/7/100%/33.1s [Ktouch trimmed/REL7185A.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL7185A\tSM:REL7185A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL7185A_1.fastq" "trimmed/REL7185A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL7185A.sorted.bam
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21884987(94.129%)
+Q30 bases: 20520311(88.2594%)
+Q40 bases: 4049783(17.4184%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 20166346(86.737%)
+Q30 bases: 18199556(78.2777%)
+Q40 bases: 3397446(14.6127%)
+
+Read1 after filtering:
+total reads: 138249
+total bases: 17744994
+Q20 bases: 17375672(97.9187%)
+Q30 bases: 16553696(93.2866%)
+Q40 bases: 3727015(21.0032%)
+
+Read2 after filtering:
+total reads: 138249
+total bases: 17744994
+Q20 bases: 17093447(96.3283%)
+Q30 bases: 15681392(88.3708%)
+Q40 bases: 3227104(18.186%)
+
+Filtering result:
+reads passed filter: 276498
+reads failed due to low quality: 33374
+reads failed due to too many N: 128
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 100194
+bases trimmed due to adapters: 6064822
+
+Duplication rate: 0.0490323%
+
+Insert size peak (evaluated by paired-end reads): 54
+
+JSON report: trimmed/REL7185A.json
+HTML report: trimmed/REL7185A.html
+
+fastp --thread 2 -i raw/REL7185A_1.fastq -I raw/REL7185A_2.fastq -o trimmed/REL7185A_1.fastq -O trimmed/REL7185A_2.fastq --html trimmed/REL7185A.html --json trimmed/REL7185A.json 
+fastp v1.3.6, time used: 0 seconds
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [K[M::process] read 155926 sequences (20000058 bp)...
+[M::process] read 120572 sequences (15489930 bp)...
+ETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 89s Left: 3 AVG: 33.00s  local:3/7/100%/33.3s [KETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [KETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [KETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [KETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [K2026-10-23T22:06:27 prefetch.3.4.1:  HTTPS download succeed
+ETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [KETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (323, 69972, 16, 313)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (422, 768, 1884)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4808)
+[M::mem_pestat] mean and std.dev: (1069.84, 1040.92)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 6270)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (108, 209, 417)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1035)
+[M::mem_pestat] mean and std.dev: (282.65, 220.18)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1344)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (145, 465, 835)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 2215)
+[M::mem_pestat] mean and std.dev: (527.33, 514.80)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 2905)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (361, 753, 2396)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6466)
+[M::mem_pestat] mean and std.dev: (1427.38, 1566.98)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8501)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 99s Left: 3 AVG: 33.14s  local:3/7/100%/33.4s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [K2026-10-23T22:06:27 prefetch.3.4.1:  'SRR2584892' is valid: 195633302 bytes were streamed from 195622390
+2026-10-23T22:06:27 prefetch.3.4.1: 1) 'SRR2584892' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584892/SRR2584892.sra
+ETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [K[M::mem_process_seqs] Processed 155926 reads in 4.292 CPU sec, 2.129 real sec
+ETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.29s  local:3/7/100%/33.6s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (247, 54047, 18, 253)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (341, 893, 2369)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6425)
+[M::mem_pestat] mean and std.dev: (1383.04, 1433.18)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8453)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (108, 212, 423)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1053)
+[M::mem_pestat] mean and std.dev: (285.10, 221.32)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1368)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (59, 733, 1950)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 5732)
+[M::mem_pestat] mean and std.dev: (860.47, 1106.43)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 7623)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (325, 626, 1726)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4528)
+[M::mem_pestat] mean and std.dev: (979.76, 985.91)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 5929)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.43s  local:3/7/100%/33.7s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [K[M::mem_process_seqs] Processed 120572 reads in 3.602 CPU sec, 1.811 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL7185A\tSM:REL7185A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL7185A_1.fastq trimmed/REL7185A_2.fastq
+[main] Real time: 4.057 sec; CPU: 7.997 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [Ksamtools index bam/REL7185A.sorted.bam
+ETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL7185A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL7185A.vcf.gz.tmp"
+ETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [K[mpileup] 1 samples in 1 input files
+ETA: 99s Left: 3 AVG: 33.57s  local:3/7/100%/33.9s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [Ktest -s "raw/SRR2584892_1.fastq"
+test -s "raw/SRR2584892_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584892_1.fastq" > "raw/REL968A_1.fastq"
+spots read      : 1,474,571
+reads read      : 2,949,142
+reads written   : 2,949,142
+ETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [Khead -n $(( 155000 * 4 )) "raw/SRR2584892_2.fastq" > "raw/REL968A_2.fastq"
+ETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [Krm -rf "raw/SRR2584892" "raw/SRR2584892_1.fastq" "raw/SRR2584892_2.fastq"
+ETA: 99s Left: 3 AVG: 33.71s  local:3/7/100%/34.0s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [Ktouch raw/REL968A.done
+fastp --thread 2 \
+	-i "raw/REL968A_1.fastq" -I "raw/REL968A_2.fastq" \
+	-o "trimmed/REL968A_1.fastq" -O "trimmed/REL968A_2.fastq" \
+	--html "trimmed/REL968A.html" --json "trimmed/REL968A.json"
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KRead1 before filtering:
+total reads: 155000
+total bases: 15655000
+Q20 bases: 13270673(84.7695%)
+Q30 bases: 12183624(77.8258%)
+Q40 bases: 2896198(18.5001%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 15655000
+Q20 bases: 14435787(92.212%)
+Q30 bases: 13384378(85.4959%)
+Q40 bases: 3354785(21.4295%)
+
+Read1 after filtering:
+total reads: 133550
+total bases: 13478176
+Q20 bases: 12793307(94.9187%)
+Q30 bases: 11851956(87.9344%)
+Q40 bases: 2874374(21.3261%)
+
+Read2 after filtering:
+total reads: 133550
+total bases: 13478176
+Q20 bases: 12981681(96.3163%)
+Q30 bases: 12195445(90.4829%)
+Q40 bases: 3167064(23.4977%)
+
+Filtering result:
+reads passed filter: 267100
+reads failed due to low quality: 42524
+reads failed due to too many N: 376
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 1924
+bases trimmed due to adapters: 21092
+
+Duplication rate: 0.0232258%
+
+Insert size peak (evaluated by paired-end reads): 151
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [Ktouch trimmed/REL968A.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL968A\tSM:REL968A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL968A_1.fastq" "trimmed/REL968A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL968A.sorted.bam
+
+JSON report: trimmed/REL968A.json
+HTML report: trimmed/REL968A.html
+
+fastp --thread 2 -i raw/REL968A_1.fastq -I raw/REL968A_2.fastq -o trimmed/REL968A_1.fastq -O trimmed/REL968A_2.fastq --html trimmed/REL968A.html --json trimmed/REL968A.json 
+fastp v1.3.6, time used: 0 seconds
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [K[M::bwa_idx_load_from_disk] read 0 ALT contigs
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [K[M::process] read 198174 sequences (20000030 bp)...
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [K[M::process] read 68926 sequences (6956322 bp)...
+ETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 33.86s  local:3/7/100%/34.1s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.00s  local:3/7/100%/34.3s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 83668, 12, 0)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (154, 199, 286)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 550)
+[M::mem_pestat] mean and std.dev: (226.93, 97.97)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 682)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (13, 34, 102)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 280)
+[M::mem_pestat] mean and std.dev: (49.42, 46.40)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 369)
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+[M::mem_pestat] skip orientation RF
+ETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [K[M::mem_process_seqs] Processed 198174 reads in 4.207 CPU sec, 2.101 real sec
+ETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.14s  local:3/7/100%/34.4s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (0, 28887, 5, 1)
+[M::mem_pestat] skip orientation FF as there are not enough pairs
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (153, 195, 275)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 519)
+[M::mem_pestat] mean and std.dev: (220.25, 91.53)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 641)
+[M::mem_pestat] skip orientation RF as there are not enough pairs
+[M::mem_pestat] skip orientation RR as there are not enough pairs
+ETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [K[M::mem_process_seqs] Processed 68926 reads in 1.464 CPU sec, 0.709 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL968A\tSM:REL968A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL968A_1.fastq trimmed/REL968A_2.fastq
+[main] Real time: 2.908 sec; CPU: 5.760 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.29s  local:3/7/100%/34.6s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [Ksamtools index bam/REL968A.sorted.bam
+ETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL968A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL968A.vcf.gz.tmp"
+[mpileup] 1 samples in 1 input files
+ETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [KETA: 99s Left: 3 AVG: 34.43s  local:3/7/100%/34.7s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL7185A.vcf.gz.tmp"
+mv "vcf/REL7185A.vcf.gz.tmp" vcf/REL7185A.vcf.gz
+mv "vcf/REL7185A.vcf.gz.tmp.csi" "vcf/REL7185A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 61s Left: 2 AVG: 30.12s  local:2/8/100%/30.4s [KETA: 60s Left: 2 AVG: 30.12s  local:2/8/100%/30.4s [KETA: 60s Left: 2 AVG: 30.12s  local:2/8/100%/30.4s [KETA: 60s Left: 2 AVG: 30.12s  local:2/8/100%/30.4s [KETA: 60s Left: 2 AVG: 30.12s  local:2/8/100%/30.4s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.25s  local:2/8/100%/30.5s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.38s  local:2/8/100%/30.6s [KETA: 60s Left: 2 AVG: 30.50s  local:2/8/100%/30.8s [KETA: 60s Left: 2 AVG: 30.50s  local:2/8/100%/30.8s [KETA: 60s Left: 2 AVG: 30.50s  local:2/8/100%/30.8s [KETA: 60s Left: 2 AVG: 30.62s  local:2/8/100%/30.9s [KETA: 60s Left: 2 AVG: 30.62s  local:2/8/100%/30.9s [KETA: 60s Left: 2 AVG: 30.62s  local:2/8/100%/30.9s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL968A.vcf.gz.tmp"
+mv "vcf/REL968A.vcf.gz.tmp" vcf/REL968A.vcf.gz
+mv "vcf/REL968A.vcf.gz.tmp.csi" "vcf/REL968A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 27s Left: 1 AVG: 27.22s  local:1/9/100%/27.4s [KETA: 27s Left: 1 AVG: 27.22s  local:1/9/100%/27.4s [KETA: 27s Left: 1 AVG: 27.22s  local:1/9/100%/27.4s [KETA: 27s Left: 1 AVG: 27.33s  local:1/9/100%/27.6s [KETA: 27s Left: 1 AVG: 27.33s  local:1/9/100%/27.6s [KETA: 27s Left: 1 AVG: 27.33s  local:1/9/100%/27.6s [KETA: 27s Left: 1 AVG: 27.44s  local:1/9/100%/27.7s [KETA: 27s Left: 1 AVG: 27.44s  local:1/9/100%/27.7s [KETA: 27s Left: 1 AVG: 27.44s  local:1/9/100%/27.7s [KETA: 27s Left: 1 AVG: 27.56s  local:1/9/100%/27.8s [KETA: 27s Left: 1 AVG: 27.56s  local:1/9/100%/27.8s [KETA: 27s Left: 1 AVG: 27.67s  local:1/9/100%/27.9s [KETA: 27s Left: 1 AVG: 27.67s  local:1/9/100%/27.9s [KETA: 27s Left: 1 AVG: 27.78s  local:1/9/100%/28.0s [KETA: 27s Left: 1 AVG: 27.89s  local:1/9/100%/28.1s [KETA: 27s Left: 1 AVG: 27.89s  local:1/9/100%/28.1s [KETA: 27s Left: 1 AVG: 28.00s  local:1/9/100%/28.2s [KETA: 27s Left: 1 AVG: 28.11s  local:1/9/100%/28.3s [KETA: 27s Left: 1 AVG: 28.22s  local:1/9/100%/28.4s [KETA: 27s Left: 1 AVG: 28.33s  local:1/9/100%/28.6s [KETA: 27s Left: 1 AVG: 28.44s  local:1/9/100%/28.7s [KETA: 27s Left: 1 AVG: 28.67s  local:1/9/100%/28.9s [KETA: 27s Left: 1 AVG: 28.78s  local:1/9/100%/29.0s [KETA: 27s Left: 1 AVG: 28.89s  local:1/9/100%/29.1s [KETA: 27s Left: 1 AVG: 29.00s  local:1/9/100%/29.2s [KETA: 27s Left: 1 AVG: 29.11s  local:1/9/100%/29.3s [KETA: 27s Left: 1 AVG: 29.22s  local:1/9/100%/29.4s [KETA: 27s Left: 1 AVG: 29.33s  local:1/9/100%/29.6s [KETA: 27s Left: 1 AVG: 29.44s  local:1/9/100%/29.7s [K2026-10-23T22:07:00 prefetch.3.4.1:  HTTPS download succeed
+2026-10-23T22:07:00 prefetch.3.4.1:  'SRR2584819' is valid: 191496539 bytes were streamed from 191485374
+2026-10-23T22:07:00 prefetch.3.4.1: 1) 'SRR2584819' was downloaded successfully
+fasterq-dump --split-files --threads 2 --outdir raw raw/SRR2584819/SRR2584819.sra
+ETA: 27s Left: 1 AVG: 29.56s  local:1/9/100%/29.8s [KETA: 27s Left: 1 AVG: 29.56s  local:1/9/100%/29.8s [KETA: 27s Left: 1 AVG: 29.67s  local:1/9/100%/29.9s [KETA: 27s Left: 1 AVG: 29.78s  local:1/9/100%/30.0s [KETA: 27s Left: 1 AVG: 29.89s  local:1/9/100%/30.1s [Ktest -s "raw/SRR2584819_1.fastq"
+test -s "raw/SRR2584819_2.fastq"
+head -n $(( 155000 * 4 )) "raw/SRR2584819_1.fastq" > "raw/REL7178A_1.fastq"
+spots read      : 982,124
+reads read      : 1,964,248
+reads written   : 1,964,248
+ETA: 27s Left: 1 AVG: 29.89s  local:1/9/100%/30.1s [Khead -n $(( 155000 * 4 )) "raw/SRR2584819_2.fastq" > "raw/REL7178A_2.fastq"
+rm -rf "raw/SRR2584819" "raw/SRR2584819_1.fastq" "raw/SRR2584819_2.fastq"
+touch raw/REL7178A.done
+fastp --thread 2 \
+	-i "raw/REL7178A_1.fastq" -I "raw/REL7178A_2.fastq" \
+	-o "trimmed/REL7178A_1.fastq" -O "trimmed/REL7178A_2.fastq" \
+	--html "trimmed/REL7178A.html" --json "trimmed/REL7178A.json"
+ETA: 27s Left: 1 AVG: 29.89s  local:1/9/100%/30.1s [KETA: 27s Left: 1 AVG: 30.00s  local:1/9/100%/30.2s [KETA: 27s Left: 1 AVG: 30.00s  local:1/9/100%/30.2s [Ktouch trimmed/REL7178A.trimmed
+bwa mem -t 2 \
+	-R "@RG\tID:REL7178A\tSM:REL7178A\tPL:ILLUMINA" \
+	../week05/sequences/NC_000913.3.fasta "trimmed/REL7178A_1.fastq" "trimmed/REL7178A_2.fastq" \
+	| samtools sort -@ 2 -o bam/REL7178A.sorted.bam
+Read1 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 21906131(94.2199%)
+Q30 bases: 20327858(87.4316%)
+Q40 bases: 3887507(16.7205%)
+
+Read2 before filtering:
+total reads: 155000
+total bases: 23250000
+Q20 bases: 18814988(80.9247%)
+Q30 bases: 16462796(70.8077%)
+Q40 bases: 2753275(11.842%)
+
+Read1 after filtering:
+total reads: 126268
+total bases: 17638920
+Q20 bases: 17207831(97.556%)
+Q30 bases: 16322174(92.535%)
+Q40 bases: 3476956(19.7118%)
+
+Read2 after filtering:
+total reads: 126268
+total bases: 17638920
+Q20 bases: 16705900(94.7104%)
+Q30 bases: 14832497(84.0896%)
+Q40 bases: 2632941(14.9269%)
+
+Filtering result:
+reads passed filter: 252536
+reads failed due to low quality: 57336
+reads failed due to too many N: 128
+reads failed due to too short: 0
+reads failed due to adapter dimer: 0
+reads with adapter trimmed: 46568
+bases trimmed due to adapters: 2638990
+
+Duplication rate: 0.036129%
+
+Insert size peak (evaluated by paired-end reads): 114
+
+JSON report: trimmed/REL7178A.json
+HTML report: trimmed/REL7178A.html
+
+fastp --thread 2 -i raw/REL7178A_1.fastq -I raw/REL7178A_2.fastq -o trimmed/REL7178A_1.fastq -O trimmed/REL7178A_2.fastq --html trimmed/REL7178A.html --json trimmed/REL7178A.json 
+fastp v1.3.6, time used: 1 seconds
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+[M::process] read 143320 sequences (20000150 bp)...
+[M::process] read 109216 sequences (15277690 bp)...
+ETA: 27s Left: 1 AVG: 30.00s  local:1/9/100%/30.2s [KETA: 27s Left: 1 AVG: 30.00s  local:1/9/100%/30.2s [KETA: 27s Left: 1 AVG: 30.00s  local:1/9/100%/30.2s [KETA: 30s Left: 1 AVG: 30.11s  local:1/9/100%/30.3s [KETA: 30s Left: 1 AVG: 30.11s  local:1/9/100%/30.3s [KETA: 30s Left: 1 AVG: 30.11s  local:1/9/100%/30.3s [KETA: 30s Left: 1 AVG: 30.11s  local:1/9/100%/30.3s [KETA: 30s Left: 1 AVG: 30.22s  local:1/9/100%/30.4s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (418, 63060, 21, 414)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (397, 873, 2596)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6994)
+[M::mem_pestat] mean and std.dev: (1541.15, 1645.47)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9193)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (187, 403, 637)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1537)
+[M::mem_pestat] mean and std.dev: (425.80, 265.62)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 1987)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (103, 161, 1533)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 4393)
+[M::mem_pestat] mean and std.dev: (413.89, 573.39)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 5823)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (383, 793, 2422)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 6500)
+[M::mem_pestat] mean and std.dev: (1447.50, 1593.28)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 8539)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 30s Left: 1 AVG: 30.22s  local:1/9/100%/30.4s [KETA: 30s Left: 1 AVG: 30.22s  local:1/9/100%/30.4s [K[M::mem_process_seqs] Processed 143320 reads in 4.578 CPU sec, 2.273 real sec
+ETA: 30s Left: 1 AVG: 30.22s  local:1/9/100%/30.4s [KETA: 30s Left: 1 AVG: 30.22s  local:1/9/100%/30.4s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.33s  local:1/9/100%/30.6s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [K[M::mem_pestat] # candidate unique pairs for (FF, FR, RF, RR): (262, 47999, 13, 281)
+[M::mem_pestat] analyzing insert size distribution for orientation FF...
+[M::mem_pestat] (25, 50, 75) percentile: (427, 1003, 3072)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 8362)
+[M::mem_pestat] mean and std.dev: (1806.72, 1959.47)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 11007)
+[M::mem_pestat] analyzing insert size distribution for orientation FR...
+[M::mem_pestat] (25, 50, 75) percentile: (194, 420, 653)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 1571)
+[M::mem_pestat] mean and std.dev: (438.25, 271.05)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 2030)
+[M::mem_pestat] analyzing insert size distribution for orientation RF...
+[M::mem_pestat] (25, 50, 75) percentile: (190, 454, 4218)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 12274)
+[M::mem_pestat] mean and std.dev: (1685.38, 2414.93)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 16302)
+[M::mem_pestat] analyzing insert size distribution for orientation RR...
+[M::mem_pestat] (25, 50, 75) percentile: (468, 870, 2778)
+[M::mem_pestat] low and high boundaries for computing mean and std.dev: (1, 7398)
+[M::mem_pestat] mean and std.dev: (1665.81, 1767.33)
+[M::mem_pestat] low and high boundaries for proper pairs: (1, 9708)
+[M::mem_pestat] skip orientation FF
+[M::mem_pestat] skip orientation RF
+[M::mem_pestat] skip orientation RR
+ETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [K[M::mem_process_seqs] Processed 109216 reads in 3.584 CPU sec, 1.775 real sec
+[main] Version: 0.7.19-r1273
+[main] CMD: bwa mem -t 2 -R @RG\tID:REL7178A\tSM:REL7178A\tPL:ILLUMINA ../week05/sequences/NC_000913.3.fasta trimmed/REL7178A_1.fastq trimmed/REL7178A_2.fastq
+[main] Real time: 4.183 sec; CPU: 8.268 sec
+[bam_sort_core] merging from 0 files and 2 in-memory blocks...
+ETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.44s  local:1/9/100%/30.7s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [Ksamtools index bam/REL7178A.sorted.bam
+ETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [Kset -o pipefail; \
+/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools mpileup -f ../week05/sequences/NC_000913.3.fasta --annotate FORMAT/DP,FORMAT/AD -Ou bam/REL7178A.sorted.bam \
+	| /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools call --ploidy 1 -m -v -Oz -o "vcf/REL7178A.vcf.gz.tmp"
+ETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [K[mpileup] 1 samples in 1 input files
+ETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [K[mpileup] maximum number of reads per input file set to -d 250
+ETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.56s  local:1/9/100%/30.8s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.67s  local:1/9/100%/30.9s [KETA: 30s Left: 1 AVG: 30.78s  local:1/9/100%/31.0s [KETA: 30s Left: 1 AVG: 30.78s  local:1/9/100%/31.0s [KETA: 30s Left: 1 AVG: 30.78s  local:1/9/100%/31.0s [KETA: 30s Left: 1 AVG: 30.78s  local:1/9/100%/31.0s [KETA: 30s Left: 1 AVG: 30.78s  local:1/9/100%/31.0s [KETA: 30s Left: 1 AVG: 30.89s  local:1/9/100%/31.1s [KETA: 30s Left: 1 AVG: 30.89s  local:1/9/100%/31.1s [KETA: 30s Left: 1 AVG: 30.89s  local:1/9/100%/31.1s [KETA: 30s Left: 1 AVG: 30.89s  local:1/9/100%/31.1s [KETA: 30s Left: 1 AVG: 31.00s  local:1/9/100%/31.2s [KETA: 30s Left: 1 AVG: 31.00s  local:1/9/100%/31.2s [KETA: 30s Left: 1 AVG: 31.11s  local:1/9/100%/31.3s [KETA: 30s Left: 1 AVG: 31.11s  local:1/9/100%/31.3s [KETA: 30s Left: 1 AVG: 31.22s  local:1/9/100%/31.4s [K/opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools index -f "vcf/REL7178A.vcf.gz.tmp"
+mv "vcf/REL7178A.vcf.gz.tmp" vcf/REL7178A.vcf.gz
+mv "vcf/REL7178A.vcf.gz.tmp.csi" "vcf/REL7178A.vcf.gz.csi"
+make[1]: Leaving directory '/Users/sanyamshah/Shah_BMMB852/week09'
+ETA: 0s Left: 0 AVG: 28.10s  local:0/10/100%/28.3s [KETA: 0s Left: 0 AVG: 28.10s  local:0/10/100%/28.3s [K

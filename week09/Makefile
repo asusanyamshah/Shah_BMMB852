@@ -1,0 +1,99 @@
+
+SHELL := /bin/bash
+
+# ---- single-sample parameters (overridden by batch/parallel) ----
+SRR      ?= SRR2584863
+SAMPLE   ?= REL7179B
+N        ?= 155000
+THREADS  ?= 2
+
+# ---- shared paths ----
+REF          := ../week05/sequences/NC_000913.3.fasta
+RAW_DIR      := raw
+TRIMMED_DIR  := trimmed
+BAM_DIR      := bam
+VCF_DIR      := vcf
+RESULTS_DIR  := results
+DESIGN       := design.csv
+
+# ---- tools ----
+BWA           ?= bwa
+SAMTOOLS      ?= samtools
+FASTP         ?= fastp
+PREFETCH      ?= prefetch
+FASTERQ_DUMP  ?= fasterq-dump
+BCFTOOLS      ?= /opt/homebrew/Caskroom/miniforge/base/envs/variantcall/bin/bcftools
+
+# GNU parallel: --colsep , for CSV, --header : to use column names as {placeholders}
+PARALLEL := parallel --colsep , --header : --eta --lb -j 3
+
+# per-sample derived paths
+BAM := $(BAM_DIR)/$(SAMPLE).sorted.bam
+VCF := $(VCF_DIR)/$(SAMPLE).vcf.gz
+MERGED_VCF := $(RESULTS_DIR)/merged.vcf.gz
+MERGED_STATS := $(RESULTS_DIR)/merged.stats.txt
+
+.PHONY: all variant batch merge stats clean print
+.SECONDARY:
+
+all: $(VCF)
+
+$(RAW_DIR) $(TRIMMED_DIR) $(BAM_DIR) $(VCF_DIR) $(RESULTS_DIR):
+	mkdir -p $@
+
+print:
+	@echo "SRR=$(SRR) SAMPLE=$(SAMPLE) N=$(N) REF=$(REF)"
+
+$(REF).bwt: $(REF)
+	$(BWA) index $<
+
+# Download + subsample reads for one run accession
+$(RAW_DIR)/$(SAMPLE).done: | $(RAW_DIR)
+	$(PREFETCH) $(SRR) -O $(RAW_DIR)
+	$(FASTERQ_DUMP) --split-files --threads $(THREADS) --outdir $(RAW_DIR) $(RAW_DIR)/$(SRR)/$(SRR).sra
+	test -s "$(RAW_DIR)/$(SRR)_1.fastq"
+	test -s "$(RAW_DIR)/$(SRR)_2.fastq"
+	head -n $$(( $(N) * 4 )) "$(RAW_DIR)/$(SRR)_1.fastq" > "$(RAW_DIR)/$(SAMPLE)_1.fastq"
+	head -n $$(( $(N) * 4 )) "$(RAW_DIR)/$(SRR)_2.fastq" > "$(RAW_DIR)/$(SAMPLE)_2.fastq"
+	rm -rf "$(RAW_DIR)/$(SRR)" "$(RAW_DIR)/$(SRR)_1.fastq" "$(RAW_DIR)/$(SRR)_2.fastq"
+	touch $@
+
+# Trim
+$(TRIMMED_DIR)/$(SAMPLE).trimmed: $(RAW_DIR)/$(SAMPLE).done | $(TRIMMED_DIR)
+	$(FASTP) --thread $(THREADS) \
+		-i "$(RAW_DIR)/$(SAMPLE)_1.fastq" -I "$(RAW_DIR)/$(SAMPLE)_2.fastq" \
+		-o "$(TRIMMED_DIR)/$(SAMPLE)_1.fastq" -O "$(TRIMMED_DIR)/$(SAMPLE)_2.fastq" \
+		--html "$(TRIMMED_DIR)/$(SAMPLE).html" --json "$(TRIMMED_DIR)/$(SAMPLE).json"
+	touch $@
+
+# Align with a read group named after the sample alias
+$(BAM): $(TRIMMED_DIR)/$(SAMPLE).trimmed $(REF).bwt | $(BAM_DIR)
+	$(BWA) mem -t $(THREADS) \
+		-R "@RG\tID:$(SAMPLE)\tSM:$(SAMPLE)\tPL:ILLUMINA" \
+		$(REF) "$(TRIMMED_DIR)/$(SAMPLE)_1.fastq" "$(TRIMMED_DIR)/$(SAMPLE)_2.fastq" \
+		| $(SAMTOOLS) sort -@ $(THREADS) -o $@
+	$(SAMTOOLS) index $@
+
+# Call variants for ONE sample -> bgzipped, indexed single-sample VCF
+$(VCF): $(BAM) $(REF) | $(VCF_DIR)
+	set -o pipefail; \
+	$(BCFTOOLS) mpileup -f $(REF) --annotate FORMAT/DP,FORMAT/AD -Ou $(BAM) \
+		| $(BCFTOOLS) call --ploidy 1 -m -v -Oz -o "$@.tmp"
+	$(BCFTOOLS) index -f "$@.tmp"
+	mv "$@.tmp" $@
+	mv "$@.tmp.csi" "$@.csi"
+
+# ---- batch processing: read design.csv, launch `make all` per row ----
+batch:
+	cat $(DESIGN) | $(PARALLEL) \
+		$(MAKE) SRR={run_accession} SAMPLE={sample_alias} N=$(N) THREADS=$(THREADS) all
+
+# ---- merge all per-sample VCFs into one multi-sample VCF ----
+merge: | $(RESULTS_DIR)
+	$(BCFTOOLS) merge --write-index -Oz -o $(MERGED_VCF) $(VCF_DIR)/*.vcf.gz
+	$(BCFTOOLS) stats $(MERGED_VCF) > $(MERGED_STATS)
+
+stats: $(MERGED_STATS)
+
+clean:
+	rm -rf $(RAW_DIR) $(TRIMMED_DIR) $(BAM_DIR) $(VCF_DIR) $(RESULTS_DIR)
