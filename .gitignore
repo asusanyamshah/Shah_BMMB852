@@ -14,3 +14,10 @@ week09/bam/
 week08/raw/
 week08/trimmed/
 week08/bam/
+
+# week10 regeneratable intermediates
+week10/raw/
+week10/trimmed/
+week10/genome/
+week10/bam/*.bam
+week10/bam/*.bai
