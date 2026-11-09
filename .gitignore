@@ -21,3 +21,12 @@ week10/trimmed/
 week10/genome/
 week10/bam/*.bam
 week10/bam/*.bai
+
+# week11 regeneratable intermediates
+week11/fasta/chr22.genome.fa
+week11/fasta/chr22.genome.fa.*.ht2
+week11/fasta/chr22.genome.fa.fai
+week11/fasta/chr22.transcripts.fa
+week11/gtf/
+week11/bam/
+week11/fastq/
