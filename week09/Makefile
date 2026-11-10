@@ -49,13 +49,9 @@ $(REF).bwt: $(REF)
 
 # Download + subsample reads for one run accession
 $(RAW_DIR)/$(SAMPLE).done: | $(RAW_DIR)
-	$(PREFETCH) $(SRR) -O $(RAW_DIR)
-	$(FASTERQ_DUMP) --split-files --threads $(THREADS) --outdir $(RAW_DIR) $(RAW_DIR)/$(SRR)/$(SRR).sra
-	test -s "$(RAW_DIR)/$(SRR)_1.fastq"
-	test -s "$(RAW_DIR)/$(SRR)_2.fastq"
-	head -n $$(( $(N) * 4 )) "$(RAW_DIR)/$(SRR)_1.fastq" > "$(RAW_DIR)/$(SAMPLE)_1.fastq"
-	head -n $$(( $(N) * 4 )) "$(RAW_DIR)/$(SRR)_2.fastq" > "$(RAW_DIR)/$(SAMPLE)_2.fastq"
-	rm -rf "$(RAW_DIR)/$(SRR)" "$(RAW_DIR)/$(SRR)_1.fastq" "$(RAW_DIR)/$(SRR)_2.fastq"
+	fastq-dump -X $(N) --split-files --outdir $(RAW_DIR) $(SRR)
+	mv "$(RAW_DIR)/$(SRR)_1.fastq" "$(RAW_DIR)/$(SAMPLE)_1.fastq"
+	mv "$(RAW_DIR)/$(SRR)_2.fastq" "$(RAW_DIR)/$(SAMPLE)_2.fastq"
 	touch $@
 
 # Trim
