@@ -55,11 +55,8 @@ $(GENOME_FASTA).bwt: $(GENOME_FASTA)
 
 # ---- download + subsample single-end reads for one run accession ----
 $(RAW_DIR)/$(SAMPLE).done: | $(RAW_DIR)
-	$(PREFETCH) $(SRR) -O $(RAW_DIR)
-	$(FASTERQ_DUMP) --threads $(THREADS) --outdir $(RAW_DIR) $(RAW_DIR)/$(SRR)/$(SRR).sra
-	test -s "$(RAW_DIR)/$(SRR).fastq"
-	head -n $$(( $(N) * 4 )) "$(RAW_DIR)/$(SRR).fastq" > "$(RAW_DIR)/$(SAMPLE).fastq"
-	rm -rf "$(RAW_DIR)/$(SRR)" "$(RAW_DIR)/$(SRR).fastq"
+	fastq-dump -X $(N) --outdir $(RAW_DIR) $(SRR)
+	mv "$(RAW_DIR)/$(SRR).fastq" "$(RAW_DIR)/$(SAMPLE).fastq"
 	touch $@
 
 # ---- trim (single-end) ----
