@@ -30,3 +30,7 @@ week11/fasta/chr22.transcripts.fa
 week11/gtf/
 week11/bam/
 week11/fastq/
+
+# week12 regeneratable intermediates
+week12/salmon_index/
+week12/counts/
